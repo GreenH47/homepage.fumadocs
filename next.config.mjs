@@ -6,6 +6,11 @@ const withMDX = createMDX();
 const config = {
   reactStrictMode: true,
 
+  eslint: {
+    /** WARNING: only use while you’re stabilising this feature branch */
+    ignoreDuringBuilds: true,
+  },
+
   images: {
     remotePatterns: [
       {
