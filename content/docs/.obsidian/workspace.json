@@ -1,0 +1,228 @@
+{
+  "main": {
+    "id": "1373099e68191f08",
+    "type": "split",
+    "children": [
+      {
+        "id": "ceab9220d78e47d9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "deebffe1d3592c4d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "chat/221206_ChatGPT.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "221206_ChatGPT"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4296cf10474ab741",
+    "type": "split",
+    "children": [
+      {
+        "id": "cba1e4c95369dbd5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d6b9588278305d45",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "2b4724871940cd97",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "4d565521d6fe818d",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "834b2f5f3af1ad6c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "bb6e2c06669023ce",
+    "type": "split",
+    "children": [
+      {
+        "id": "a5c0e9f187bd3efe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cd96aa95aa2f01c5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "dc678a259caade89",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "K8s/CKA_learning_note.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for CKA_learning_note"
+            }
+          },
+          {
+            "id": "17a44dd001bde343",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "4f84539c9dc6c799",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "oz-clear-unused-images:Clear Unused Images": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "deebffe1d3592c4d",
+  "lastOpenFiles": [
+    "career/career_note_menu.md",
+    "collection/collection.md",
+    "career/career_23summer.md",
+    "ccna/CCNA.md",
+    "about/about_site_building.md",
+    "about/about_me.md",
+    "about/about_index.md",
+    "about/about_copyright.md",
+    "K8s/CKA_learning_note.md",
+    "K8s/Core+concepts+-2.pdf",
+    "nextjs/cors.md",
+    "nextjs",
+    "homelab/ubuntu.md",
+    "homelab/GLPI.md",
+    "img/GLPI-20250528-11.png",
+    "img/GLPI-20250528-10.png",
+    "img/GLPI-20250528-9.png",
+    "img/GLPI-20250528-8.png",
+    "img/GLPI-20250528-7.png",
+    "img/GLPI-20250528-6.png",
+    "img/GLPI-20250528-5.png",
+    "img/GLPI-20250528-4.png",
+    "img/GLPI-20250528-3.png",
+    "img/GLPI-20250528-2.png",
+    "homelab/windows_lab.md",
+    "homelab/exchange-server.md",
+    "Untitled.md",
+    "homelab",
+    "ccna",
+    "K8s/kubernetes-certs-checker.xlsx",
+    "K8s/KubernetesForBeginners-MumshadMannambeth.pdf",
+    "kubernetes/kubernetes.md",
+    "K8s/KubernetesForBeginners-MumshadMannambeth.pdf.crdownload",
+    "K8s/Docker+vs+Containerd+resource.pdf",
+    "K8s/Docker+vs+Containerd+resource.pdf.crdownload",
+    "K8s/Core+concepts+-2.pdf.crdownload",
+    "reactJS/react_note_menu.md",
+    "redis/redis_initial.md",
+    "index.md",
+    "house.md",
+    "data_structure/linked-list.md",
+    "data_structure/HashSet.md",
+    "data_structure/array.md",
+    "LeetCode/4sum.md",
+    "LeetCode/reverse-linked-list.md",
+    "LeetCode/maximum-average-subarray-i.md",
+    "Untitled.canvas",
+    "未命名.canvas"
+  ]
+}

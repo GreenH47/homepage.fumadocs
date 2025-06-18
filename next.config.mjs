@@ -5,6 +5,19 @@ const withMDX = createMDX();
 /** @type {import('next').NextConfig} */
 const config = {
   reactStrictMode: true,
+
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 's3.greenhuang.com',
+        pathname: '/**',          // or '/docs/**' if you want to be stricter
+      },
+    ],
+    // If you’re on < Next 15.3, you can use the simpler syntax:
+    // domains: ['s3.greenhuang.com'],
+  },
+
 };
 
 export default withMDX(config);
