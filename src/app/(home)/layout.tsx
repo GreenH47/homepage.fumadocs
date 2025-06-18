@@ -1,14 +1,14 @@
+
+
 import type {ReactNode} from 'react';
 import {HomeLayout} from 'fumadocs-ui/layouts/home';
 import {baseOptions} from '@/app/layout.config';
 
 
 import {Metadata} from 'next';
-
-// import '@/app/globals.css';
 import {Providers} from '@/lib/providers';
 import Footer from '@/components/layout/footer';
-
+import '@/global.css';
 
 const title = 'Green Huang | Full Stack Developer From Melbourne Australia.';
 const description =
@@ -26,10 +26,6 @@ export const metadata: Metadata = {
         'AWS Engineer',
     ],
     creator: 'Green Huang',
-    themeColor: [
-        {media: '(prefers-color-scheme: light)', color: 'white'},
-        {media: '(prefers-color-scheme: dark)', color: 'black'},
-    ],
     openGraph: {
         type: 'website',
         url,
@@ -51,8 +47,8 @@ export const metadata: Metadata = {
     },
     icons: {
         icon: '/icon.png',
-        shortcut: 'https://download.greenhuang.com/favicon.ico',
-        apple: 'https://download.greenhuang.com/favicon.ico',
+        shortcut: 'https://s3.greenhuang.com/favicon.ico',
+        apple: 'https://s3.greenhuang.com/favicon.ico',
     },
 };
 

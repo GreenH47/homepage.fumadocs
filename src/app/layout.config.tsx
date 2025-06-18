@@ -11,13 +11,6 @@ import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
 export const baseOptions: BaseLayoutProps = {
     githubUrl: 'https://github.com/GreenH47',
     links: [
-        {
-            icon: <BookIcon />,
-            text: 'Blog',
-            url: '/docs',
-            // secondary items will be displayed differently on navbar
-            secondary: false,
-        },
 
         {
             type: 'icon',
