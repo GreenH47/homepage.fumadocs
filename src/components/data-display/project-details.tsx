@@ -25,7 +25,7 @@ const ProjectDetails = ({
       {/* Image */}
       <div
         className={mergeClasses(
-          'flex items-center justify-center border-gray-100 bg-gray-50 p-8 dark:bg-gray-200 max-md:rounded-t-xl md:w-1/2 lg:p-12',
+          'flex items-center justify-center border-gray-100 p-8 max-md:rounded-t-xl md:w-1/2 lg:p-12',
           layoutType === 'default'
             ? 'md:rounded-l-xl md:border-r'
             : 'md:order-last md:rounded-r-xl md:border-l'
@@ -48,7 +48,7 @@ const ProjectDetails = ({
           layoutType === 'default' ? '' : 'md:order-first'
         )}
       >
-        <Typography variant="subtitle" className="font-semibold text-gray-900">
+        <Typography variant="subtitle" className="font-semibold">
           {name}
         </Typography>
         <Typography>{description}</Typography>

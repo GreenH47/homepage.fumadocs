@@ -29,7 +29,7 @@ const ExperienceDetails = ({
         />
       </div>
       <div className="flex flex-col gap-4 max-md:order-3 md:w-2/4">
-        <Typography variant="subtitle" className="font-semibold text-gray-900">
+        <Typography variant="subtitle" className="font-semibold">
           {position}
         </Typography>
         <ul className="flex list-disc flex-col gap-2 md:gap-1">
@@ -41,7 +41,7 @@ const ExperienceDetails = ({
         </ul>
       </div>
       <div className="max-md:order-2 md:w-1/4">
-        <Typography className="text-gray-700 md:text-right">
+        <Typography className=" md:text-right">
           {new Intl.DateTimeFormat('en-US', dateFormatOptions).format(
             startDate
           )}{' '}

@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const TestimonialsSection = () => {
   return (
-    <Container id="references" className="bg-gray-50">
+    <Container id="references" className="">
       <div className="flex flex-col items-center gap-4">
         <div className="self-center">
           <Tag label="Reference" />

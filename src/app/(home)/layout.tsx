@@ -6,8 +6,8 @@ import {baseOptions} from '@/app/layout.config';
 
 
 import {Metadata} from 'next';
-import {Providers} from '@/lib/providers';
-import Footer from '@/components/layout/footer';
+// import {Providers} from '@/lib/providers';
+// import Footer from '@/components/layout/footer';
 import '@/global.css';
 
 const title = 'Green Huang | Full Stack Developer From Melbourne Australia.';
@@ -54,9 +54,8 @@ export const metadata: Metadata = {
 
 export default function Layout({children}: { children: ReactNode }) {
     return (
-        <Providers>
+
             <HomeLayout {...baseOptions}>{children}</HomeLayout>
-            <Footer/>
-        </Providers>
+
     );
 }

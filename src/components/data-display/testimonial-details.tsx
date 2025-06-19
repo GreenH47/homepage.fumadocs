@@ -18,7 +18,7 @@ const TestimonialDetails = ({
             <div className="flex w-full flex-col gap-1">
                 <Typography
                     variant="subtitle"
-                    className="w-full text-center font-semibold text-gray-900"
+                    className="w-full text-center font-semibold "
                 >
 
                     <a href={link} target="_blank" rel="noopener noreferrer">{personName}</a>
