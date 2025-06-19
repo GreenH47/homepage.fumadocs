@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chat/221206_ChatGPT.md",
+                "file": "about/about_site_building.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "221206_ChatGPT"
+              "title": "about_site_building"
             }
           }
         ]
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "K8s/CKA_learning_note.md",
+                "file": "about/about_site_building.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for CKA_learning_note"
+              "title": "Backlinks for about_site_building"
             }
           },
           {
@@ -169,21 +169,25 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "oz-clear-unused-images:Clear Unused Images": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "oz-clear-unused-images:Clear Unused Images": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "edit-mdx:New .mdx file": false
     }
   },
   "active": "deebffe1d3592c4d",
   "lastOpenFiles": [
+    "about/about_copyright.md",
+    "about/about_site_building.md",
+    "index.mdx",
+    "test.mdx",
+    "chat/221206_ChatGPT.md",
     "career/career_note_menu.md",
     "collection/collection.md",
     "career/career_23summer.md",
     "ccna/CCNA.md",
-    "about/about_site_building.md",
     "about/about_me.md",
     "about/about_index.md",
-    "about/about_copyright.md",
     "K8s/CKA_learning_note.md",
     "K8s/Core+concepts+-2.pdf",
     "nextjs/cors.md",
@@ -210,8 +214,6 @@
     "kubernetes/kubernetes.md",
     "K8s/KubernetesForBeginners-MumshadMannambeth.pdf.crdownload",
     "K8s/Docker+vs+Containerd+resource.pdf",
-    "K8s/Docker+vs+Containerd+resource.pdf.crdownload",
-    "K8s/Core+concepts+-2.pdf.crdownload",
     "reactJS/react_note_menu.md",
     "redis/redis_initial.md",
     "index.md",
@@ -220,8 +222,6 @@
     "data_structure/HashSet.md",
     "data_structure/array.md",
     "LeetCode/4sum.md",
-    "LeetCode/reverse-linked-list.md",
-    "LeetCode/maximum-average-subarray-i.md",
     "Untitled.canvas",
     "未命名.canvas"
   ]
