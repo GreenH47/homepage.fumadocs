@@ -3,7 +3,8 @@ title: My Page copyright
 description: Blog copyright information
 ---
 
-Create time: 2022-10-29  Last update: 2022-11-28
+Create time: 2022-10-29  Last update: 2022-11-28  
+
 # copyright
 You may be able to use portions of copyright material without permission for the purpose of:  
 - research or study  

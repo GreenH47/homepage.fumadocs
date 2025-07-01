@@ -15,6 +15,17 @@ yarn dev
 
 Open http://localhost:3000 with your browser to see the result.
 
+# docker command
+```shell
+docker build --platform linux/arm64 -t greenh47/homepage-fumadocs:nextjs .
+
+docker build --platform linux/arm64 -f Dockerfile.prod -t greenh47/homepage-fumadocs:nextjs .
+
+docker run -p 8000:3000 greenh47/homepage-fumadocs:nextjs
+
+docker push greenh47/homepage-fumadocs:nextjs
+```
+
 
 # Project Structure Overview
 
@@ -141,6 +152,10 @@ In the project, you can see:
 A `source.config.ts` config file has been included, you can customise different options like frontmatter schema.
 
 Read the [Introduction](https://fumadocs.dev/docs/mdx) for further details.
+
+## sitemap generation
+https://dev.to/rajeshkumaryadavdotcom/how-to-install-and-use-next-sitemap-in-a-nextjs-app-a-step-by-step-guide-114l  
+
 
 ## Learn More
 

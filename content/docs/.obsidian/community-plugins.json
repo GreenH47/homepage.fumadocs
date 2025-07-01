@@ -3,7 +3,6 @@
   "obsidian-enhancing-mindmap",
   "obsidian-kanban",
   "obsidian-mind-map",
-  "obsidian-git",
   "obsidian-paste-image-rename",
   "obsidian-plugin-toc",
   "obsidian-admonition",
@@ -22,5 +21,6 @@
   "editing-toolbar",
   "execute-code",
   "code-styler",
-  "edit-mdx"
+  "edit-mdx",
+  "image-upload-toolkit"
 ]

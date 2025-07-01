@@ -59,32 +59,6 @@ export const EXTERNAL_LINKS = {
 
     };
 
-export const NAV_LINKS = [
-    {
-        label: 'About',
-        href: '#about',
-    },
-    {
-        label: 'Work',
-        href: '#employment',
-    },
-    {
-        label: 'Projects',
-        href: '#projects',
-    },
-    {
-        label: 'Skills',
-        href: '#Skills',
-    },
-    {
-        label: 'References',
-        href: '#references',
-    },
-    {
-        label: 'Contact',
-        href: '#contact',
-    },
-];
 
 export const SOCIAL_LINKS = [
     {

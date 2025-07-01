@@ -11,6 +11,34 @@ import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
 export const baseOptions: BaseLayoutProps = {
     githubUrl: 'https://github.com/GreenH47',
     links: [
+        // {
+        //     text: 'About',
+        //     url: '#about',
+        // },
+        // {
+        //     text: 'Work',
+        //     url: '#employment',
+        // },
+        // {
+        //     text: 'Projects',
+        //     url: '#projects',
+        // },
+        // {
+        //     text: 'Skills',
+        //     url: '#Skills',
+        // },
+        // {
+        //     text: 'References',
+        //     url: '#references',
+        // },
+        // {
+        //     text: 'Contact',
+        //     url: '#contact',
+        // },
+        {
+            text: 'Blog',
+            url: '/docs',
+        },
 
         {
             type: 'icon',

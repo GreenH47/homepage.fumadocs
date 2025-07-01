@@ -1,0 +1,12 @@
+services:
+  home_page:
+    image: greenh47/homepage-fumadocs:nextjs
+    command: npm run start
+    ports:
+      - 7000:3000
+    restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: '1'  # Limit container to use 100% of available CPU cores
+          memory: 2000M # Limit container to use 2000MB of memory

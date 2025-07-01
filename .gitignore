@@ -1,6 +1,7 @@
 # ide configs
 .idea/
 .vscode/
+content/docs/.obsidian
 
 
 # deps

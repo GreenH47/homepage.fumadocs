@@ -1,0 +1,51 @@
+# syntax=docker/dockerfile:1.4
+
+################  deps stage (cached)  ################
+# – bookworm-slim supports arm64 and ships glibc
+FROM --platform=linux/arm64 node:20-bookworm-slim AS deps
+WORKDIR /app
+
+# Install build tools only once (they’re removed later)
+#RUN apt-get update && \
+#    apt-get install -y --no-install-recommends \
+#        build-essential python3 pkg-config libvips-dev ca-certificates \
+#    && rm -rf /var/lib/apt/lists/*
+
+# Copy lock-files first to maximise cache hits
+COPY package*.json source.config.ts next.config.mjs ./
+RUN npm ci                      # prod deps only
+
+################  build stage (isolated)  ################
+FROM deps AS build
+WORKDIR /app
+
+# Tailwind & PostCSS configs are needed for the build
+COPY tailwind.config.js postcss.config.mjs next-sitemap.config.js ./
+COPY . .
+
+# Compile Next.js / Fumadocs
+ENV NEXT_TELEMETRY_DISABLED=1
+RUN npm run build && \
+    npm prune --omit=dev                    # keep runtime footprint tiny
+
+################  runtime stage (slim)  ################
+FROM --platform=linux/arm64 node:20-bookworm-slim AS runtime
+WORKDIR /app
+ENV NODE_ENV=production \
+    NEXT_TELEMETRY_DISABLED=1 \
+    # Prevent “sharp: cannot find libvips” at runtime
+    LD_LIBRARY_PATH=/usr/lib:/usr/local/lib
+
+# Copy the minimal artefacts
+COPY --from=build /app/.next              ./.next
+COPY --from=build /app/public             ./public
+COPY --from=deps  /app/node_modules       ./node_modules
+COPY --from=build /app/package.json       ./package.json
+COPY --from=deps  /app/.source            ./source
+
+# Optionally drop root for security
+RUN useradd -m appuser && chown -R appuser:appuser /app
+USER appuser
+
+EXPOSE 3000
+CMD ["npm", "run", "start"]
