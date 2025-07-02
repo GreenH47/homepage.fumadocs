@@ -20,7 +20,7 @@
 /coverage
 
 # obsidian
-/content/docs/.obsidian
+/content/docs/.obsidian/*
 
 # misc
 .DS_Store

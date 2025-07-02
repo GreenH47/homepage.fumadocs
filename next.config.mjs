@@ -1,3 +1,4 @@
+//next.config.mjs
 import { createMDX } from 'fumadocs-mdx/next';
 
 const withMDX = createMDX();
@@ -5,6 +6,7 @@ const withMDX = createMDX();
 /** @type {import('next').NextConfig} */
 const config = {
   reactStrictMode: true,
+  // output: 'standalone',
 
   eslint: {
     /** WARNING: only use while you’re stabilising this feature branch */
@@ -12,6 +14,11 @@ const config = {
   },
 
   images: {
+    //Disables optimisation (and cache writes) altogether if you use an external CDN;
+    // trade-off is lost responsive formats.
+    // unoptimized: true,
+
+    // If you want to use an external CDN, you can specify the domains here.
     remotePatterns: [
       {
         protocol: 'https',

@@ -98,9 +98,9 @@ In your report, discuss this plot and justify  your observations. Please make su
 
 ## How to do it
 ### preparation
-1. open the folder in Vscode and install all depend package ![](../img/fit5225_note-20230414.png)  
-2. move terminal dic to `object_detection` folder and run this command `python object_detection.py ../yolo_tiny_configs/ ../client/inputfolder/000000026923.jpg` here is the result ![](../img/fit5225_note-20230414-2.png)  
-3. build flask web service with this code demo ![](../img/fit5225_note-20230414-3.png)  
+1. open the folder in Vscode and install all depend package ![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230414.png)  
+2. move terminal dic to `object_detection` folder and run this command `python object_detection.py ../yolo_tiny_configs/ ../client/inputfolder/000000026923.jpg` here is the result ![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230414-2.png)  
+3. build flask web service with this code demo ![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230414-3.png)  
 ### web service program
 1. change the web service py file into this and run the flask service in terminal  
 ```python
@@ -122,8 +122,8 @@ def detect():
 if __name__=='__main__':
     app.run(debug=True, host='0.0.0.0', threaded=True,port=81)
 ```
-2. run this command `python ./client/Cloudiod_client.py  test/  http://localhost:81/api/detect 1` to call object detection function and the terminal shall return like this info ![](../img/fit5225_note-20230414-4.png) because the image data format looks like that `{  "id":"06e8b9e0-8d2e-11eb-8dcd-0242ac130003", "image":"YWRzZmFzZGZhc2RmYXNkZmFzZGYzNDM1MyA7aztqMjUzJyBqaDJsM2 ..." }`  so we need extract the `"image":` bytes for further process.
-3. then look back the flask terminal we can find the return post result ![](../img/fit5225_note-20230414-5.png)  
+2. run this command `python ./client/Cloudiod_client.py  test/  http://localhost:81/api/detect 1` to call object detection function and the terminal shall return like this info ![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230414-4.png) because the image data format looks like that `{  "id":"06e8b9e0-8d2e-11eb-8dcd-0242ac130003", "image":"YWRzZmFzZGZhc2RmYXNkZmFzZGYzNDM1MyA7aztqMjUzJyBqaDJsM2 ..." }`  so we need extract the `"image":` bytes for further process.
+3. then look back the flask terminal we can find the return post result ![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230414-5.png)  
 4. then change the `object_detection.py` to implement this function into our server  
 ```python
 import base64
@@ -209,9 +209,9 @@ def detect():
         "objects":result
     }
 ```
-6. run the command beyond `python ./client/Cloudiod_client.py  test/  http://localhost:5001/api/object_detection 1` and get such result in json format ![](../img/fit5225_note-20230414-7.png)  
+6. run the command beyond `python ./client/Cloudiod_client.py  test/  http://localhost:5001/api/object_detection 1` and get such result in json format ![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230414-7.png)  
 ### Dockerfile
-![](../img/fit5225_note-20230417.png)  
+![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230417.png)  
 
 ```dockerfile
 FROM python:3.8.10
@@ -241,17 +241,17 @@ Werkzeug==2.2.3
 Zipp==3.15.0
 ```
 1. download docker desktop [Docker](https://hub.docker.com/) and follow this instruction [Manual installation steps for older versions of WSL | Microsoft Learn](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package) to use docker and its command in vscode and windows
-2. build local container `docker build -t cloudiod:first .` ![](../img/fit5225_note-20230414-8.png) and it will run the Dockerfile command together ![](../img/fit5225_note-20230414-10.png)  
-3. run the image in docker desktop and keep the reserve port ![](../img/fit5225_note-20230414-11.png)  
-4. and run the command `python ./client/Cloudiod_client.py  test/  http://localhost:5001/api/object_detection 1` we can find the post request in docker ![](../img/fit5225_note-20230414-12.png)  
+2. build local container `docker build -t cloudiod:first .` ![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230414-8.png) and it will run the Dockerfile command together ![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230414-10.png)  
+3. run the image in docker desktop and keep the reserve port ![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230414-11.png)  
+4. and run the command `python ./client/Cloudiod_client.py  test/  http://localhost:5001/api/object_detection 1` we can find the post request in docker ![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230414-12.png)  
 5. push image to the cloud `docker login`; `docker tag <image name> <docker username>/<repo name>`; `docker push <docker username>/<repo name>`; `docker pull <docker username>/<repo name>`  
 ### Kubernetes Service 
 [Developing on Remote Machines using SSH and Visual Studio Code](https://code.visualstudio.com/docs/remote/ssh)  
-1. setting up k8s cluster in OCI and follow the guide of week5 tutorial ![](../img/fit5225_note-20230414-13.png) ![](../img/fit5225_note-20230415.png)
-2. ssh to master node and pull docker image we have uploaded ![](../img/fit5225_note-20230418-1.png)
+1. setting up k8s cluster in OCI and follow the guide of week5 tutorial ![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230414-13.png) ![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230415.png)
+2. ssh to master node and pull docker image we have uploaded ![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230418-1.png)
 
 ### Kubernetes Service  
-![](../img/fit5225_note-20230417-1.png)  
+![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230417-1.png)  
 
 [Developing on Remote Machines using SSH and Visual Studio Code](https://code.visualstudio.com/docs/remote/ssh)   
 [Remote SSH using Visual Studio Code -](https://saket404.github.io/ssh/ssh-using-vscode/)  
@@ -288,8 +288,8 @@ spec:
 
 
 ```
-use `kubectl get pods,deployment,svc -owide` to check out ![](../img/fit5225_note-20230415-4.png)
-use `kubectl logs <pod name>` to check out logs ![](../img/fit5225_note-20230415-3.png) 
+use `kubectl get pods,deployment,svc -owide` to check out ![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230415-4.png)
+use `kubectl logs <pod name>` to check out logs ![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230415-3.png) 
 use `curl <pod ip>:<port>` to check web service 
 
 ```yaml
@@ -309,20 +309,20 @@ spec:
       targetPort: 5001
       nodePort: 30000
 ```
-use `kubectl apply -f service.yaml` to apply the change(chatgpt really helpful for this assignment) ![](../img/fit5225_note-20230415-5.png)  
-and use `curl localhost:<nodePort>` to check web service (in master node and work node). then switch local terminal use `python ./client/Cloudiod_client.py  test/  http://<master node public ip>:30000/api/object_detection 1` to do detection ![](../img/fit5225_note-20230415-6.png)  
-and move to nectar instance to test web connection with same command  ![](../img/fit5225_note-20230416.png)  
+use `kubectl apply -f service.yaml` to apply the change(chatgpt really helpful for this assignment) ![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230415-5.png)  
+and use `curl localhost:<nodePort>` to check web service (in master node and work node). then switch local terminal use `python ./client/Cloudiod_client.py  test/  http://<master node public ip>:30000/api/object_detection 1` to do detection ![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230415-6.png)  
+and move to nectar instance to test web connection with same command  ![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230416.png)  
 
 
 ### experiment
 change the thread number `python Cloudiod_client.py  <input folder name> <URL> <num_threads>` the thread number 1, 2, 4, 8, and 16, and we can see that the thread number effect the response time  
-![](../img/fit5225_note-20230415-7.png)  
+![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230415-7.png)  
 another is change nod number in `deployment.yaml` under  `spec: replicas: 1 # tells deployment to run 1 pods matching the template` and don't forget to apply change the nod number `kubectl apply -f deployment.yaml` .   
-The number of pods must be scaled to 1, 2, 4, 8 and 16 so this way you will run a total of 5 × 5 = 25 experiments.   For each run, 128 images will be sent to the server and the average response time is collected .and you need to check whether the pod is running before doing the experiment ![](../img/fit5225_note-20230416-1.png)  
+The number of pods must be scaled to 1, 2, 4, 8 and 16 so this way you will run a total of 5 × 5 = 25 experiments.   For each run, 128 images will be sent to the server and the average response time is collected .and you need to check whether the pod is running before doing the experiment ![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230416-1.png)  
 [How to Fix OOMKilled Kubernetes Error (Exit Code 137)](https://komodor.com/learn/how-to-fix-oomkilled-exit-code-137/) [# What is Kubernetes CrashLoopBackOff? And how to fix it](https://sysdig.com/blog/debug-kubernetes-crashloopbackoff/)   
-use this command to real time monitor the status `watch kubectl get pods,deployment,svc -owide`![](../img/fit5225_note-20230417-2.png)
-![](../img/fit5225_note-20230416-2.png)  
-![](../img/fit5225_note-20230416-3.png)  
+use this command to real time monitor the status `watch kubectl get pods,deployment,svc -owide`![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230417-2.png)
+![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230416-2.png)  
+![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230416-3.png)  
 ### iteration
 reduces the Docker image size, makes the image more memory-efficient, uses a production-grade web server, improves security by using a slim base image, and removes an unnecessary RUN command. 减小了 Docker 映像的大小，使映像的内存效率更高，使用了生产级 Web 服务器，通过使用 slim 基础映像提高了安全性，并删除了不必要的 RUN 命令.   
 ```dockerfile
@@ -354,9 +354,9 @@ bind = "0.0.0.0:5001"
 workers = 1
 ```
 
-here is the optimization result ![](../img/fit5225_note-20230418.png)
+here is the optimization result ![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230418.png)
 and if sum(num_thread) <= num_pod, you can double run the experiment to save time.  
-![](../img/fit5225_note-20230417-3.png)  
+![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230417-3.png)  
 
 ## automatic script
  here is a random number generator for duplicate result and copy it to your clipboard.   
@@ -468,7 +468,7 @@ plt.title('Average Response Time for the local client')
 plt.savefig('Local_avg_res_time.png')
 
 ```
-and here is one of the result (not complete version) ![](../img/fit5225_note-20230418-2.png)
+and here is one of the result (not complete version) ![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230418-2.png)
 
 # Assignment 2 designing an AWS Cloud-Based Solution for a Toll Management Application
 ## Background
@@ -503,13 +503,13 @@ Your solution should focus solely on the task of <mark style="background: #0000C
 
 ## Note
 ### storage
-![](../img/fit5225_note-20230509.png)  
+![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230509.png)  
 [What is Amazon S3? - Amazon Simple Storage Service](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)  
 
 
-![](../img/fit5225_note-20230509-1.png)  [Object Storage Classes – Amazon S3](https://aws.amazon.com/s3/storage-classes/)  
+![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230509-1.png)  [Object Storage Classes – Amazon S3](https://aws.amazon.com/s3/storage-classes/)  
 
-![](../img/fit5225_note-20230509-2.png)  
+![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230509-2.png)  
 
 ### EC2 Amazon Elastic Compute Cloud
 [Amazon EC2](https://aws.amazon.com/pm/ec2/)  
@@ -519,7 +519,7 @@ Your solution should focus solely on the task of <mark style="background: #0000C
 
 ### Amazon Virtual Private Cloud (Amazon VPC)
 [What is Amazon VPC? - Amazon Virtual Private Cloud](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)  
-![](../img/fit5225_note-20230509-4.png)
+![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230509-4.png)
 
 ### architect
 [Reference Architecture Examples and Best Practices](https://aws.amazon.com/architecture/?cards-all.sort-by=item.additionalFields.sortDate&cards-all.sort-order=desc&awsf.content-type=*all&awsf.methodology=*all&awsf.tech-category=*all&awsf.industries=*all&awsf.business-category=*all) 
@@ -532,18 +532,18 @@ Your solution should focus solely on the task of <mark style="background: #0000C
 [Free AWS Architecture Diagram Examples | EdrawMax Online](https://www.edrawmax.com/article/aws-architecture-diagram-examples.html)  
 [IoT | AWS Architecture Center](https://aws.amazon.com/architecture/iot/?cards-all.sort-by=item.additionalFields.sortDate&cards-all.sort-order=desc&awsf.content-type=*all&awsf.methodology=*all)  
 
-![](../img/fit5225_note-20230509-8.png)
-![](../img/fit5225_note-20230509-9.png)  
+![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230509-8.png)
+![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230509-9.png)  
 
-![](../img/fit5225_note-20230509-7.png)  
-![](../img/fit5225_note-20230509-10.png)  
+![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230509-7.png)  
+![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230509-10.png)  
 
 # assignment 2 CloudSnap: A Serverless Image Storage System with Tagging
 ## Synopsis  
 This assignment aims to build a cloud-based online system that allows users to store and retrieve images based on auto-generated tags. The focus of this project is to design a serverless application that enables clients to upload their images to public cloud storage. Upon image upload, the application automatically tags the image with the objects detected in it, such as person, car, etc. Later on, clients can query images based on the objects present in them. To achieve this, the application provides users with a list of image URLs (or tumbnails) that include the specific queried objects 概要 本作业旨在构建一个基于云的在线系统，允许用户根据自动生成的标签存储和检索图像。这个项目的重点是设计一个无服务器应用程序，使客户能够将他们的图像上传到公共云存储。上传图像后，应用程序会自动为图像标记检测到的物体，例如人、车等。稍后，客户端可以根据图像中存在的物体查询图像。为此，该应用程序为用户提供了包含特定查询对象的图像 URL（或缩略图）列表
 
 ## Assignment Description  
-Teams should develop an AWS cloud-based solution that leverages services such as S3, Lambda, API Gateway, and database services (e.g., DynamoDB) to build a system for automated object detection tagging and query handling. The teams should produce a solution that enables end-users to upload their images into an S3 bucket. Upon uploading an image to a designated S3 bucket, a lambda function is automatically triggered, which uses the Yolo object detection feature to identify the objects in the image and stores the list of detected objects along with the image’s S3 URL in a database. Furthermore, the end-user should be able to submit queries to an API endpoint using API Gateway to search for tagged images (more details to come). Table 1 provides a glossary of terms used in the assignment description 任务描述 团队应开发一个基于 AWS 云的解决方案，该解决方案利用 S3、Lambda、API 网关和数据库服务（例如 DynamoDB）等服务来构建用于自动对象检测标记和查询处理的系统。团队应该制定一个解决方案，使最终用户能够将他们的图像上传到 S3 存储桶中。将图像上传到指定的 S3 存储桶后，会自动触发 lambda 函数，该函数使用 Yolo 对象检测功能来识别图像中的对象，并将检测到的对象列表与图像的 S3 URL 一起存储在数据库中。此外，最终用户应该能够使用 API 网关向 API 端点提交查询以搜索标记的图像（更多细节即将到来）。表 1 提供了作业描述中使用的术语表![](../img/fit5225_note-20230527.png)  
+Teams should develop an AWS cloud-based solution that leverages services such as S3, Lambda, API Gateway, and database services (e.g., DynamoDB) to build a system for automated object detection tagging and query handling. The teams should produce a solution that enables end-users to upload their images into an S3 bucket. Upon uploading an image to a designated S3 bucket, a lambda function is automatically triggered, which uses the Yolo object detection feature to identify the objects in the image and stores the list of detected objects along with the image’s S3 URL in a database. Furthermore, the end-user should be able to submit queries to an API endpoint using API Gateway to search for tagged images (more details to come). Table 1 provides a glossary of terms used in the assignment description 任务描述 团队应开发一个基于 AWS 云的解决方案，该解决方案利用 S3、Lambda、API 网关和数据库服务（例如 DynamoDB）等服务来构建用于自动对象检测标记和查询处理的系统。团队应该制定一个解决方案，使最终用户能够将他们的图像上传到 S3 存储桶中。将图像上传到指定的 S3 存储桶后，会自动触发 lambda 函数，该函数使用 Yolo 对象检测功能来识别图像中的对象，并将检测到的对象列表与图像的 S3 URL 一起存储在数据库中。此外，最终用户应该能够使用 API 网关向 API 端点提交查询以搜索标记的图像（更多细节即将到来）。表 1 提供了作业描述中使用的术语表![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230527.png)  
 ## Authentication and Authorisation  
 Security is one of the most crucial aspects of developing cloud-first applications. When your application is publicly exposed, you must ensure that your endpoints and resources are safeguarded against unauthorized access and malicious requests. AWS, through its Cognito service, provides a straightforward, secure, and centralized approach to protect your web application and its various resources from unauthorized access 身份验证和授权安全性是开发云优先应用程序最重要的方面之一。当您的应用程序公开时，您必须确保您的端点和资源受到保护，免受未经授权的访问和恶意请求。 AWS 通过其 Cognito 服务提供了一种直接、安全和集中的方法来保护您的 Web 应用程序及其各种资源免遭未经授权的访问  
 To leverage the AWS Cognito service, first, you need to create a user pool that stores user credentials. Then, you need to create and configure a client app that provides access to your application and/or other AWS services to query and use the user pool. Finally, you have two options to communicate with the AWS Cognito service and perform authentication and/or authorization: 1) Use the AWS Amplify JavaScript Library to initialize the authentication module of your application or 2) Use the AWS JavaScript SDK to access the user pool and identity provider(s) that you have defined earlier 要利用 AWS Cognito 服务，首先，您需要创建一个用户池来存储用户凭证。然后，您需要创建和配置一个客户端应用程序，以提供对您的应用程序和/或其他 AWS 服务的访问，以查询和使用用户池。最后，您有两个选项可以与 AWS Cognito 服务通信并执行身份验证和/或授权：1) 使用 AWS Amplify JavaScript 库初始化应用程序的身份验证模块或 2) 使用 AWS JavaScript SDK 访问用户池和您之前定义的身份提供者  

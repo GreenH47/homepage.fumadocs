@@ -18,12 +18,13 @@ Open http://localhost:3000 with your browser to see the result.
 # docker command
 ```shell
 docker build --platform linux/arm64 -t greenh47/homepage-fumadocs:nextjs .
+docker run -p 8000:3000 greenh47/homepage-fumadocs:nextjs
+docker push greenh47/homepage-fumadocs:nextjs
+
 
 docker build --platform linux/arm64 -f Dockerfile.prod -t greenh47/homepage-fumadocs:nextjs .
-
-docker run -p 8000:3000 greenh47/homepage-fumadocs:nextjs
-
-docker push greenh47/homepage-fumadocs:nextjs
+docker tag greenh47/homepage-fumadocs:nextjs greenh47/homepage-fumadocs:base
+docker push greenh47/homepage-fumadocs:base
 ```
 
 
