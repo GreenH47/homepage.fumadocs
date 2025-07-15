@@ -27,6 +27,8 @@ content/docs/.obsidian
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+/public/sitemap.xml
+/public/sitemap-0.xml
 
 # others
 .env*.local

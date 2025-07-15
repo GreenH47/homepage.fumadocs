@@ -29,7 +29,7 @@ import LogoSkillsPrometheus from '/public/images/skills-logo/logo-prometheus.svg
 import LogoSkillsProxmox from '/public/images/skills-logo/logo-proxmox.svg';
 import LogoSkillsNetworking from '/public/images/skills-logo/logo-networking.svg';
 
-import LogoWorkKingdomTechnology from '/public/images/work-logo/kingdomTechnology.png';
+import LogoWorkKingdomTechnology from '/public/images/work-logo/KingdomTechnology.png';
 import LogoWorkTechdomain from '/public/images/work-logo/tech_domain.jpeg';
 import LogoWorkRans from '/public/images/work-logo/rans.png';
 import LogoWorkOzworld from '/public/images/work-logo/ozworld.jpg';
@@ -229,19 +229,6 @@ export const EXPERIENCES: ExperienceDetails[] = [
         logoAlt: 'Kingdom Technology logo',
         position: 'Kingdom Technology - Front-End Developer Intern',
         companyUrl: 'https://kingdomtechnology.framer.website/',
-        startDate: new Date(2025, 5),
-        currentlyWorkHere: true,
-        summary: [
-            'Deliver Windows 10/11 migrations and software upgrades with SCCM during deskside support visits, ensuring zero-data-loss cut-overs',
-            'Troubleshoot service-desk tickets on-site and replace critical components (SSDs, hard drives, motherboards) on HP/Dell laptops and desktops.\n',
-            'Perform IMAC tasks, asset inventory audits, and ITAD data-wipe & decommissioning to maintain accurate lifecycle records.\n',
-        ],
-    },
-    {
-        logo: LogoWorkTechdomain,
-        logoAlt: 'Techdomain logo',
-        position: 'Tech Domain - Freelance IT Technician Deskside & Network Support',
-        companyUrl: 'https://www.techdomain.com.au/',
         startDate: new Date(2025, 4),
         currentlyWorkHere: true,
         summary: [
@@ -251,7 +238,19 @@ export const EXPERIENCES: ExperienceDetails[] = [
             'Utilising Supabase for backend services and real-time data handling\n',
         ],
     },
-
+    {
+        logo: LogoWorkTechdomain,
+        logoAlt: 'Techdomain logo',
+        position: 'Tech Domain - Freelance IT Technician Deskside & Network Support',
+        companyUrl: 'https://www.techdomain.com.au/',
+        startDate: new Date(2025, 3),
+        currentlyWorkHere: true,
+        summary: [
+            'Deliver Windows 10/11 migrations and software upgrades with SCCM during deskside support visits, ensuring zero-data-loss cut-overs',
+            'Troubleshoot service-desk tickets on-site and replace critical components (SSDs, hard drives, motherboards) on HP/Dell laptops and desktops.\n',
+            'Perform IMAC tasks, asset inventory audits, and ITAD data-wipe & decommissioning to maintain accurate lifecycle records.\n',
+        ],
+    },
 
     {
         logo: LogoWorkRans,
@@ -259,7 +258,7 @@ export const EXPERIENCES: ExperienceDetails[] = [
         position: 'RANS Australia - Website Development and Maintenance Intern',
         companyUrl: 'https://rans.com.au',
         startDate: new Date(2025, 1),
-        endDate: new Date(2025, 5),
+        endDate: new Date(2025, 4),
         summary: [
             'Optimised website (rans.com.au) with Canva & WooCommerce, boosting mobile Lighthouse scores by 18 %.',
             'Diagnosed and repaired office PC hardware (HDD swaps, RAM upgrades) and resolved Wi-Fi dropouts by re-configuring Telstra/Optus routers and replacing faulty AP modules, restoring 100 % uptime for staff devices.',
