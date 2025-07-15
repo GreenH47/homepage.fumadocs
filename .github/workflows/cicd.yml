@@ -7,7 +7,7 @@ on:
 
 
 jobs:
-  unit-tests:
+  homepage-fumadocs:
     runs-on: ubuntu-latest
 
     steps:

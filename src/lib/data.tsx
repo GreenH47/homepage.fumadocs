@@ -29,11 +29,13 @@ import LogoSkillsPrometheus from '/public/images/skills-logo/logo-prometheus.svg
 import LogoSkillsProxmox from '/public/images/skills-logo/logo-proxmox.svg';
 import LogoSkillsNetworking from '/public/images/skills-logo/logo-networking.svg';
 
-
+import LogoWorkKingdomTechnology from '/public/images/work-logo/kingdomTechnology.png';
+import LogoWorkTechdomain from '/public/images/work-logo/tech_domain.jpeg';
 import LogoWorkRans from '/public/images/work-logo/rans.png';
 import LogoWorkOzworld from '/public/images/work-logo/ozworld.jpg';
 import LogoWorkJinhuan from '/public/images/work-logo/jinhuan.png';
 import LogoWorkNaton from '/public/images/work-logo/naton.jpg';
+
 
 
 import ProjectHomelab from '/public/images/project/project-proxmox.png';
@@ -223,11 +225,41 @@ export const TECHNOLOGIES: TechDetails[] = [
 
 export const EXPERIENCES: ExperienceDetails[] = [
     {
+        logo: LogoWorkKingdomTechnology,
+        logoAlt: 'Kingdom Technology logo',
+        position: 'Kingdom Technology - Front-End Developer Intern',
+        companyUrl: 'https://kingdomtechnology.framer.website/',
+        startDate: new Date(2025, 5),
+        currentlyWorkHere: true,
+        summary: [
+            'Deliver Windows 10/11 migrations and software upgrades with SCCM during deskside support visits, ensuring zero-data-loss cut-overs',
+            'Troubleshoot service-desk tickets on-site and replace critical components (SSDs, hard drives, motherboards) on HP/Dell laptops and desktops.\n',
+            'Perform IMAC tasks, asset inventory audits, and ITAD data-wipe & decommissioning to maintain accurate lifecycle records.\n',
+        ],
+    },
+    {
+        logo: LogoWorkTechdomain,
+        logoAlt: 'Techdomain logo',
+        position: 'Tech Domain - Freelance IT Technician Deskside & Network Support',
+        companyUrl: 'https://www.techdomain.com.au/',
+        startDate: new Date(2025, 4),
+        currentlyWorkHere: true,
+        summary: [
+            'Collaborating on building MVPs for startups using Next.js, Tailwind CSS Integrating Strapi CMS for dynamic content management.',
+            'Implementing complex forms with React Hook Form and Zod for robust validation.\n',
+            'Working with webhooks and API integrations to enhance application functionality.\n',
+            'Utilising Supabase for backend services and real-time data handling\n',
+        ],
+    },
+
+
+    {
         logo: LogoWorkRans,
         logoAlt: 'Rans logo',
         position: 'RANS Australia - Website Development and Maintenance Intern',
+        companyUrl: 'https://rans.com.au',
         startDate: new Date(2025, 1),
-        currentlyWorkHere: true,
+        endDate: new Date(2025, 5),
         summary: [
             'Optimised website (rans.com.au) with Canva & WooCommerce, boosting mobile Lighthouse scores by 18 %.',
             'Diagnosed and repaired office PC hardware (HDD swaps, RAM upgrades) and resolved Wi-Fi dropouts by re-configuring Telstra/Optus routers and replacing faulty AP modules, restoring 100 % uptime for staff devices.',
@@ -236,11 +268,13 @@ export const EXPERIENCES: ExperienceDetails[] = [
             'Authored step-by-step knowledge-base articles for non-technical staff, reducing repetitive tickets by 40 %. ',
         ],
     },
+
     {
         logo: LogoWorkOzworld,
 
         logoAlt: 'Ozworld logo',
         position: 'Ozworld Timber Flooring - Warehouse Assistant',
+        companyUrl: 'https://ozworld.com.au',
         startDate: new Date(2024, 3),
         endDate: new Date(2025, 1),
         summary: [
@@ -257,6 +291,7 @@ export const EXPERIENCES: ExperienceDetails[] = [
 
         logoAlt: 'Jinhuan logo',
         position: 'Jinhuan Construction Group - Executive Assistant to the Manager',
+        companyUrl: 'https://jinhuanconstruction.com/',
         startDate: new Date(2021, 3),
         endDate: new Date(2021, 10),
         summary: [
@@ -271,6 +306,7 @@ export const EXPERIENCES: ExperienceDetails[] = [
 
         logoAlt: 'Naton logo',
         position: 'Beijing Naton Technology Group - Test Engineer of Biomechanics',
+        companyUrl: 'https://www.natonmedical.com/?en-US',
         startDate: new Date(2020, 8),
         endDate: new Date(2021, 1),
         summary: [
