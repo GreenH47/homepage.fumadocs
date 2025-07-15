@@ -32,10 +32,10 @@ jobs:
         with:
           context: .
           #file: Dockerfile.prod
-          file: Dockerfile
+          file: Dockerfile.exp
           platforms: linux/arm64            # your target architecture
           push: true
-          tags: greenh47/homepage:nextjs
+          tags: greenh47/homepage-fumadocs:nextjs
 
       - name: Update docker image
         id: update-ec2

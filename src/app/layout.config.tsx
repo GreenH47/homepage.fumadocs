@@ -41,6 +41,11 @@ export const baseOptions: BaseLayoutProps = {
         },
 
         {
+            text: 'Resume',
+            url: 'https://download.greenhuang.com/GreenHuang-IT-Support.pdf',
+        },
+
+        {
             type: 'icon',
             label: 'Linkedin', // `aria-label`
             icon: <Linkedin />,

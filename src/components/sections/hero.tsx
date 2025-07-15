@@ -6,6 +6,8 @@ import GreenFullPose from '../../../public/images/green-full-pose.jpg'; // relat
 import SocialIcons from '@/components/data-display/social-icons';
 import Typography from '@/components/general/typography';
 import Container from '@/components/layout/container';
+import DownloadCV from "@/components/general/download-cv";
+
 
 const HeroSection = () => (
     <Container id="hero">
@@ -58,7 +60,13 @@ const HeroSection = () => (
             </div>
           </div>
 
-          <SocialIcons />
+          <div className="flex items-center gap-4">
+           <DownloadCV />
+
+            <SocialIcons />
+          </div>
+
+          {/*<SocialIcons />*/}
         </div>
       </div>
     </Container>

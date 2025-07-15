@@ -22,7 +22,7 @@ docker run -p 8000:3000 greenh47/homepage-fumadocs:nextjs
 docker push greenh47/homepage-fumadocs:nextjs
 
 
-docker build --platform linux/arm64 -f Dockerfile.prod -t greenh47/homepage-fumadocs:nextjs .
+docker build --platform linux/arm64 -f Dockerfile.exp -t greenh47/homepage-fumadocs:nextjs .
 docker tag greenh47/homepage-fumadocs:nextjs greenh47/homepage-fumadocs:base
 docker push greenh47/homepage-fumadocs:base
 ```
