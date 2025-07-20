@@ -2,6 +2,8 @@
 title: FIT5225 assignment
 description: assignment and mock exam for studying FIT5225 Cloud computing and security
 ---
+# Quiz 2
+
 
 # Assignment 1
 [git repository for FIT5225_23s1/assignment1/](https://github.com/GreenH47/FIT5225_23s1/tree/main/assignment1)  
@@ -471,6 +473,7 @@ plt.savefig('Local_avg_res_time.png')
 and here is one of the result (not complete version) ![](https://s3.greenhuang.com/docs/img/fit5225/fit5225_note-20230418-2.png)
 
 # Assignment 2 designing an AWS Cloud-Based Solution for a Toll Management Application
+[project repo:](https://github.com/GreenH47/5225web)  
 ## Background
 INKED, a toll road operator company, has decided to migrate its on-premise toll management application to Amazon Web Services (AWS) and has hired you as a Cloud Solution Architect/Consultant to design their cloud solution. As an AWS solution architect, you will be responsible for designing a cloud-based solution that captures images of vehicle plates and automatically charges driver accounts based on factors such as vehicle type and distance travelled. This solution will leverage AWS services and your knowledge gained in the FIT5225 unit to enable LINKED to collect fees from drivers using their toll system. You may spend some time reading about how automatic toll systems work  
 INKED 是一家收费公路运营公司，已决定将其本地收费管理应用程序迁移到 Amazon Web Services (AWS)，并聘请您作为云解决方案架构师/顾问来设计他们的云解决方案。作为 AWS 解决方案架构师，您将负责设计一个基于云的解决方案，该解决方案可捕获车牌图像并根据车辆类型和行驶距离等因素自动向驾驶员账户收费。该解决方案将利用 AWS 服务和您在 FIT5225 单元中获得的知识，使 LINKED 能够向使用其收费系统的司机收取费用。您可能会花一些时间阅读自动收费系统的工作原理
