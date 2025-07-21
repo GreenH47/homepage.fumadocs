@@ -28,7 +28,8 @@
         "./src/*"
       ],
 
-      "public/*": ["public/*"]
+      "public/*": ["public/*"],
+      "@/public/*": ["./public/*"]
 
     },
     "plugins": [

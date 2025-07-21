@@ -37,6 +37,7 @@ import LogoWorkJinhuan from '/public/images/work-logo/jinhuan.png';
 import LogoWorkNaton from '/public/images/work-logo/naton.jpg';
 
 
+import WechatIcon from '/public/images/logos/wechat.svg';
 
 import ProjectHomelab from '/public/images/project/project-proxmox.png';
 
@@ -52,6 +53,7 @@ import {
     TechDetails,
     TestimonialDetails,
 } from '@/lib/types';
+
 
 export const EXTERNAL_LINKS = {
     GITHUB: 'https://github.com/GreenH47',
@@ -79,6 +81,11 @@ export const SOCIAL_LINKS = [
         icon: PhoneCall,
         url: 'tel:+61478395855',
     },
+    {
+        img: WechatIcon,
+        url: 'https://s3.greenhuang.com/wechat-card.png',
+    },
+
 ];
 
 export const TECHNOLOGIES: TechDetails[] = [

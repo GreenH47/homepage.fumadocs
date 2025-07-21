@@ -1,5 +1,6 @@
 import { BookIcon, Linkedin, Mail, PhoneCall } from 'lucide-react';
 import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
+import WechatIcon from '/public/images/logos/icon-wechat.svg';
 
 /**
  * This file contains the configuration for the base layout of the application.
@@ -11,30 +12,6 @@ import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
 export const baseOptions: BaseLayoutProps = {
     githubUrl: 'https://github.com/GreenH47',
     links: [
-        // {
-        //     text: 'About',
-        //     url: '#about',
-        // },
-        // {
-        //     text: 'Work',
-        //     url: '#employment',
-        // },
-        // {
-        //     text: 'Projects',
-        //     url: '#projects',
-        // },
-        // {
-        //     text: 'Skills',
-        //     url: '#Skills',
-        // },
-        // {
-        //     text: 'References',
-        //     url: '#references',
-        // },
-        // {
-        //     text: 'Contact',
-        //     url: '#contact',
-        // },
         {
             text: 'Blog',
             url: '/docs',
@@ -68,5 +45,13 @@ export const baseOptions: BaseLayoutProps = {
             text: 'PhoneCall',
             url: 'tel:+610478395855',
         },
+
+        // {
+        //     type: 'icon',
+        //     label: 'Wechat', // `aria-label`
+        //     icon: <WechatIcon />,
+        //     text: 'Wechat',
+        //     url: 'tel:+610478395855',
+        // },
     ],
 };
