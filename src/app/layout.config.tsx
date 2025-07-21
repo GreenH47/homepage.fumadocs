@@ -1,6 +1,8 @@
 import { BookIcon, Linkedin, Mail, PhoneCall } from 'lucide-react';
 import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
-import WechatIcon from '/public/images/logos/icon-wechat.svg';
+import InlineSVG from 'react-inlinesvg';
+import Logo from '@/public/images/favicon.ico';
+
 
 /**
  * This file contains the configuration for the base layout of the application.
@@ -46,12 +48,13 @@ export const baseOptions: BaseLayoutProps = {
             url: 'tel:+610478395855',
         },
 
-        // {
-        //     type: 'icon',
-        //     label: 'Wechat', // `aria-label`
-        //     icon: <WechatIcon />,
-        //     text: 'Wechat',
-        //     url: 'tel:+610478395855',
-        // },
+        {
+            type: 'icon',
+            label: 'Wechat', // `aria-label`
+            icon: <InlineSVG src="/images/logos/wechat.svg" className="h-6 w-6" />,
+            text: 'Wechat',
+            url: 'https://s3.greenhuang.com/wechat-card.png',
+        },
     ],
 };
+

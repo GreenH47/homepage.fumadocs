@@ -11,6 +11,8 @@ content/docs/.obsidian
 .contentlayer
 .content-collections
 .source
+public/sitemap.xml
+public/sitemap-0.xml
 
 # test & build
 /coverage
