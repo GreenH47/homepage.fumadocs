@@ -4,47 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "00104505133ea314",
+        "id": "b2bf1bc9bdff11e0",
         "type": "tabs",
         "dimension": 21.141649048625794,
         "children": [
           {
-            "id": "de1c79816729bedb",
+            "id": "d9c3c1268f04c186",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "interview/It-support-interview.md",
+                "file": "interview/swazzy-it-support.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of It-support-interview"
+              "title": "Outline of swazzy-it-support"
             },
-            "group": "581b8c9cb997d1ab"
+            "group": "1e2931922a34bdb0"
           }
         ]
       },
       {
-        "id": "bdb07de448728a7d",
+        "id": "58ae5ab71282c9bd",
         "type": "tabs",
         "dimension": 78.8583509513742,
         "children": [
           {
-            "id": "5d3ce79b94a1e225",
+            "id": "cfd7c3ebdc3d16fc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "interview/It-support-interview.md",
+                "file": "interview/swazzy-it-support.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "It-support-interview"
+              "title": "swazzy-it-support"
             },
-            "group": "581b8c9cb997d1ab"
+            "group": "1e2931922a34bdb0"
           }
         ]
       }
@@ -202,11 +202,12 @@
       "edit-mdx:New .mdx file": false
     }
   },
-  "active": "5d3ce79b94a1e225",
+  "active": "cfd7c3ebdc3d16fc",
   "lastOpenFiles": [
+    "interview/It-support-interview.md",
+    "interview/swazzy-it-support.md",
     "img/It-support-interview-20250722.png",
     "Uni-course-notes/cs61a.md",
-    "interview/It-support-interview.md",
     "homelab/windows_lab.md",
     "interview",
     "computer-science-note/Git.md",
@@ -220,7 +221,6 @@
     "img/cka/CKA_learning_note-20250322.png",
     "img/cka/CKA_learning_note-20250322-1.png",
     "img/cka/CKA_learning_note-20250325.png",
-    "img/cka/CKA_learning_note-20250325-1.png",
     "img/cka",
     "img/New folder",
     "about/test/about_copyright.md",
