@@ -4,18 +4,43 @@
     "type": "split",
     "children": [
       {
-        "id": "8f608551fc236891",
+        "id": "b2bf1bc9bdff11e0",
         "type": "tabs",
+        "dimension": 21.141649048625794,
         "children": [
           {
-            "id": "33b70c3dea9d2f0a",
+            "id": "d9c3c1268f04c186",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "interview/swazzy-it-support.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of swazzy-it-support"
+            },
+            "group": "1e2931922a34bdb0"
+          }
+        ]
+      },
+      {
+        "id": "58ae5ab71282c9bd",
+        "type": "tabs",
+        "dimension": 78.8583509513742,
+        "children": [
+          {
+            "id": "cfd7c3ebdc3d16fc",
             "type": "leaf",
             "state": {
               "type": "empty",
               "state": {},
               "icon": "lucide-file",
               "title": "New tab"
-            }
+            },
+            "group": "1e2931922a34bdb0"
           }
         ]
       }
@@ -84,7 +109,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "bb6e2c06669023ce",
@@ -172,8 +198,14 @@
       "edit-mdx:New .mdx file": false
     }
   },
-  "active": "d6b9588278305d45",
+  "active": "cfd7c3ebdc3d16fc",
   "lastOpenFiles": [
+    "interview/swazzy-it-support.md",
+    "interview/It-support-interview.md",
+    "img/It-support-interview-20250722.png",
+    "Uni-course-notes/cs61a.md",
+    "homelab/windows_lab.md",
+    "interview",
     "computer-science-note/Git.md",
     "computer science note/Git/Git.md",
     "img/cka/CKA_learning_note-20250104-1.png",
@@ -185,7 +217,6 @@
     "img/cka/CKA_learning_note-20250322.png",
     "img/cka/CKA_learning_note-20250322-1.png",
     "img/cka/CKA_learning_note-20250325.png",
-    "img/cka/CKA_learning_note-20250325-1.png",
     "img/cka",
     "img/New folder",
     "about/test/about_copyright.md",
@@ -211,15 +242,10 @@
     "course_notes/fit5120.md",
     "course_notes/fit5057.md",
     "course_notes/fit5046.md",
-    "course_notes/fit5032.md",
-    "course_notes/Rintro.md",
-    "course_notes/cs61a.md",
     "course_notes",
-    "chat/221206_ChatGPT.md",
     "K8s/Core+concepts+-2.pdf",
     "nextjs",
     "homelab",
-    "ccna",
     "Untitled.canvas",
     "未命名.canvas"
   ]
