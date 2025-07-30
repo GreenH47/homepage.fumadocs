@@ -110,7 +110,7 @@ we can check on client side that it using AD server's clock.
 **Group Policy Objects (GPOs)** = A group policy object is a collection of policy settings. A GPO is applied to the domain, or an OU to target users, computers, or the entire domain. You will spend most of your time working with GPs.  
 **组策略对象 (GPO)** = 组策略对象是一组策略设置的集合。GPO 应用于域或组织单元 (OU)，以定位用户、计算机或整个域。您将花费大部分时间与组策略对象打交道。
 
-![group policy objects](https://activedirectorypro.com/wp-content/uploads/2022/09/group-policy-objects.webp "group-policy-objects")
+![](../img/windows_lab-20250730.png)
 
 **Group Policy Management Console (GPMC)** = This is the management console used to manage group policy and GPOs. This is installed on the Active Directory server but can also be added to other computers by [installing the RSAT tools](https://activedirectorypro.com/install-rsat-remote-server-administration-tools-windows-10/).  
 **组策略管理控制台 (GPMC)** = 这是用于管理组策略和 GPO 的管理控制台。它安装在 Active Directory 服务器上，但也可以通过[安装 RSAT 工具](https://activedirectorypro.com/install-rsat-remote-server-administration-tools-windows-10/)将其添加到其他计算机。
@@ -124,7 +124,7 @@ we can check on client side that it using AD server's clock.
 **User Configuration Policies** = Each GPO has a user configuration and computer configuration section. The User configuration policies only apply to users.  
 **用户配置策略** = 每个 GPO 都有用户配置和计算机配置部分。用户配置策略仅适用于用户。
 
-![group policy user configuration](https://activedirectorypro.com/wp-content/uploads/2022/09/gpo-user-configuration.webp "gpo-user-configuration")
+![](../img/windows_lab-20250730-1.png)
 
 **Computer Configuration Policies** = The GPO computer configuration policies apply to the computer, not the user.  
 **计算机配置策略** = GPO 计算机配置策略适用于计算机，而不是用户。
