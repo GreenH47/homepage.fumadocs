@@ -19,7 +19,7 @@ COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
     pnpm run build
-RUN pnpm prune --prod --frozen-lockfile
+RUN pnpm prune --prod
 
 ########## runtime: slim, prod-only ##########
 FROM --platform=linux/arm64 node:20-bookworm-slim AS runtime
