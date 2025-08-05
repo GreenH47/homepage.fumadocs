@@ -108,21 +108,21 @@ sudo nginx -t              # syntax check
 sudo systemctl reload nginx
 ```
 
-![](../img/GLPI-20250528.png)
+![GLPI 20250528](https://s3.greenhuang.com/docs/GLPI-20250528.png)
 
 # setup
 ```
 greenhuang
 xVK3UhFrc2jzsFj
 ```
-![](../img/GLPI-20250528-1.png)
+![GLPI 20250528 1](https://s3.greenhuang.com/docs/GLPI-20250528-1.png)
 
 #  Synchronize User Accounts from Active Directory to GLPI
 
 [GLPI linked with Active Directory / English support / Forum GLPI-Project](https://forum.glpi-project.org/viewtopic.php?id=172754)
 
-![](../img/GLPI-20250528-2.png)
-![](../img/GLPI-20250528-3.png)
+![GLPI 20250528 2](https://s3.greenhuang.com/docs/GLPI-20250528-2.png)
+![GLPI 20250528 3](https://s3.greenhuang.com/docs/GLPI-20250528-3.png)
 follow this video setup  
 [GLPI - How to Import / Synchronize User Accounts from Active Directory to GLPI - YouTube](https://www.youtube.com/watch?v=iYvkrIeJ-z0)   
 ```
@@ -143,13 +143,13 @@ Note: Replace the highlighted orange information with your own details
 	Synchronization Filed: objectguid
 ```
 
-![](../img/GLPI-20250528-4.png)
-![](../img/GLPI-20250528-5.png)
+![GLPI 20250528 4](https://s3.greenhuang.com/docs/GLPI-20250528-4.png)
+![GLPI 20250528 5](https://s3.greenhuang.com/docs/GLPI-20250528-5.png)
 
 import user from current AD  
-![](../img/GLPI-20250528-7.png)
-![](../img/GLPI-20250528-8.png)
-![](../img/GLPI-20250528-10.png)
-![](../img/GLPI-20250528-9.png)
+![GLPI 20250528 7](https://s3.greenhuang.com/docs/GLPI-20250528-7.png)
+![GLPI 20250528 8](https://s3.greenhuang.com/docs/GLPI-20250528-8.png)
+![GLPI 20250528 10](https://s3.greenhuang.com/docs/GLPI-20250528-10.png)
+![GLPI 20250528 9](https://s3.greenhuang.com/docs/GLPI-20250528-9.png)
 # ticketing system 
-![](../img/GLPI-20250528-11.png)
+![GLPI 20250528 11](https://s3.greenhuang.com/docs/GLPI-20250528-11.png)

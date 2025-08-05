@@ -31,7 +31,7 @@ TDD stands for Test Driven Development, which is a software development process 
 6. Repeat: You should then repeat this cycle, adding new tests and features, and refactoring the code as needed until the software is complete.重复：然后，应重复此循环，添加新的测试和功能，并根据需要重构代码，直到软件完成
 
 ### Comparison of different level of testing
-![t |300](../img/fit5171_note-20230618.png)
+![fit5171 note 20230618](https://s3.greenhuang.com/docs/fit5171_note-20230618.png)
 
 ### TDD: pros & cons 
 
@@ -100,7 +100,7 @@ assertTrue() assertFalse()  assertEquals() assertNotEquals()  assertNull() asser
 + Implies(⇒) 实质蕴含  
 + Equiv(⇔)实质等价  
 + ⊢ 推导出 
-![AltText|300x200](../img/fit5171-20230313.png )
+![fit5171 20230313](https://s3.greenhuang.com/docs/fit5171-20230313.png)
 ### Predicate Logics 谓词逻辑
 + Universal (∀) 任意  
 + existential (∃) 存在  
@@ -118,7 +118,7 @@ assertTrue() assertFalse()  assertEquals() assertNotEquals()  assertNull() asser
 + Membership: 属于  
 + Set inclusion:  Subset: 子集  Proper subset:真子集  
 + Set cardinality:  `#A` = 3 集合元素个数 ｜A｜
-+ ![AltText|300x200](../img/fit5171-20230614-3.png)  
++ ![fit5171 20230614 3](https://s3.greenhuang.com/docs/fit5171-20230614-3.png)  
 ### Power set P
 A power set is set of all subsets, empty set and the original set itself 幂集是所有子集、空集和原始集本身的集合   
 + $∀X • X$   is a set, $Px = {A|A ⊆ X}$  
@@ -144,7 +144,7 @@ It is a relation that defines the set of  inputs to the set of outputs.  Note th
 `age : Person N`  `birthday : Person → Date`  
 
 ### Undirected graphs 无向图
-![AltText|300x00](../img/fit5171-20230614-4.png)  
+![fit5171 20230614 4](https://s3.greenhuang.com/docs/fit5171-20230614-4.png)  
 $G = (V, E)$  定义称二元组G=(V,E)是一个无向图(undirected graph)
 + <mark style="background: #ff0000;">V: a non-empty set of nodes {n1, n2 , n3, ..., nm }</mark>   V是一个非空有限集合 
 + <mark style="background: #ff0000;">E: a set of edges {e1, e2, ..., ep}, where each ek = (ni, nj)</mark>  E是V中元素的无序对所组成的集合  
@@ -157,17 +157,17 @@ $G = (V, E)$  定义称二元组G=(V,E)是一个无向图(undirected graph)
 + Degree 度， 节点边的数量 （环算作两条边）  
 + Path路径，多条相连的边的组合 Nodes ni and nj are connected if they  are in a path.  A component is a maximal set of  connected node 如果节点 ni 和 nj 在一条路径中，则它们是连通的 分量是连通节点的最大集合 `Path(n1,n5) = (n1, n2, n5) = <e1,  e4>` 
 ### Directed graphs 有向图
-![AltText|300x00](../img/fit5171-20230614-5.png)
+![fit5171 20230614 5](https://s3.greenhuang.com/docs/fit5171-20230614-5.png)
 + 头/原点 Source， indgree = 0  
 + 终点 Sink， outdgree = 0  
 + 入度 indgree 汇入节点的边的数量  
 + 出度 outdgree 从节点引出的边的数量
 #### Semi -Paths
-![t|300x00](../img/fit5171-20230614-6.png)
+![fit5171 20230614 6](https://s3.greenhuang.com/docs/fit5171-20230614-6.png)
 #### n-Connectedness
-![t|300x00](../img/fit5171-20230614-7.png)
+![fit5171 20230614 7](https://s3.greenhuang.com/docs/fit5171-20230614-7.png)
 #### Strongly connected components 强连通分量
-![t|300x00](../img/fit5171-20230614-8.png)
+![fit5171 20230614 8](https://s3.greenhuang.com/docs/fit5171-20230614-8.png)
 
 ### McCabe’s Cyclomatic complexity圈复杂度 
 [Cyclomatic Complexity in Software Testing (Example)](https://www.guru99.com/cyclomatic-complexity.html)  
@@ -176,7 +176,7 @@ $G = (V, E)$  定义称二元组G=(V,E)是一个无向图(undirected graph)
 计算公式1：V(G)=E-N+2P。其中，E表示控制流图中边的数量，N表示控  制流图中节点的数量，P图的连接组件数目（图的组件数是相连节点的最大集合）
 `(G) = #E - #V + p` — Strongly connected graph  
 `V(G) = #E - #V + 2p` — Not strongly connected graph  
-![t|400x300](../img/fit5171-20230614-9.png)
+![fit5171 20230614 9](https://s3.greenhuang.com/docs/fit5171-20230614-9.png)
 The cyclomatic complexity calculated for above code will be from control flow graph. The graph shows seven shapes(nodes), seven lines(edges), hence cyclomatic complexity is 7-7+2 = 2.   为上述代码计算的圈复杂度将来自控制流图。该图显示了七个形状（节点），七个线（边），因此圈复杂度为 7-7+2 = 2。
 ```
 If (Condition 1)
@@ -205,7 +205,7 @@ This metric is useful because of properties of Cyclomatic complexity (M) –
     M 可以是通过图形的路径数。（下限）
 
 
-![t|400x00](../img/fit5171-20230614-10.png)
+![fit5171 20230614 10](https://s3.greenhuang.com/docs/fit5171-20230614-10.png)
 ## week 4
 ### 黑盒测试 Blackbox
 1. 黑盒代表盒子是不透明的  
@@ -215,17 +215,17 @@ This metric is useful because of properties of Cyclomatic complexity (M) –
 5. Boundary Value Analysis  Testers can identify that a system has a special response around a specific boundary value.  
 6. Decision Table Testing  Many systems provide outputs based on a set of conditions.
 ### Normal Boundary Value Testing (NBVT) 边界值测试
-![t|400x00](../img/fit5171-20230614-11.png)
+![fit5171 20230614 11](https://s3.greenhuang.com/docs/fit5171-20230614-11.png)
 ### Robustness testing
 For each variable, we need to test its minimum and maximum values, which gives us 2n test cases. The total number of test cases required for the robust version of BVT is: 2n (minimum and maximum values) + 4n + 1 (normal values) 对于每个变量，我们需要测试它的最小值和最大值，这给了我们 2n 个测试用例。健壮版BVT所需的测试用例总数为：2n（最小值和最大值）+4n+1（正常值）
-![t|400x00](../img/fit5171-20230614-12.png)
+![fit5171 20230614 12](https://s3.greenhuang.com/docs/fit5171-20230614-12.png)
 ### Worst case testing
-![t|400x00](../img/fit5171-20230614-13.png)
+![fit5171 20230614 13](https://s3.greenhuang.com/docs/fit5171-20230614-13.png)
 ### Robust worst-case testing
-![t|400x00](../img/fit5171-20230614-14.png)
+![fit5171 20230614 14](https://s3.greenhuang.com/docs/fit5171-20230614-14.png)
 ### Equivalence class testing 等价类测试
-![t|400x00](../img/fit5171-20230614-15.png)
-![t|400x00](../img/fit5171-20230614-16.png)
+![fit5171 20230614 15](https://s3.greenhuang.com/docs/fit5171-20230614-15.png)
+![fit5171 20230614 16](https://s3.greenhuang.com/docs/fit5171-20230614-16.png)
 ### weak normal equivalence class testing
 Let Cx denote the equivalence classes of valid values for variable x (Cx is a set of equivalence classes). Then the number of test cases is max (#Cxi ), for xi ranging over all variables. That is, the maximum number of equivalence classes for all variables 令 Cx 表示变量 x 的有效值的等价类（Cx 是一组等价类）。那么测试用例的数量是最大的（#Cxi），因为 xi 遍及所有变量。即所有变量的最大等价类数  
 
@@ -233,7 +233,7 @@ Let Cx denote the equivalence classes of valid values for variable x (Cx is a se
 We assume the same settings as in the previous question. Let Ixi denote the  equivalence classes of invalid values for variable xi . Let n denote the number of variables.  the number of tests is max (#Cxi ) +  nXi=1(#Ixi ), for xi ranging over all variables. Basically, we include also the total number of test cases in the invalid areas for each variable. Note that cardinality of Ixi may not always be 2 since there may be gaps between valid equivalence classes  我们采用与上一个问题相同的设置。设 Ixi 表示变量 xi 的无效值的等价类。设 n 表示变量的数量。测试次数为 max (#Cxi ) + nX i=1 (#Ixi )，xi 遍及所有变量。基本上，我们还包括每个变量的无效区域中的测试用例总数。请注意，Ixi 的基数可能并不总是 2，因为有效等价类之间可能存在间隙
 
 ### Decision table Testing
-![t|400x00](../img/fit5171-20230614-17.png)
+![fit5171 20230614 17](https://s3.greenhuang.com/docs/fit5171-20230614-17.png)
 #### how to make dtt
 in the example each of the three variables a, b and c is the length of a side from the range `[1, 200]`. Come up with test cases for weak normal equivalenceclass testing that cover the same expected outputs 在示例中，三个变量 a、b 和 c 中的每一个都是范围 [1, 200] 中的边的长度。提出涵盖相同预期输出的弱正态等价类测试的测试用例  
 equivalence classes:  
@@ -242,10 +242,10 @@ equivalence classes:
 + D3 = {(a, b, c) | a̸ = b ∧ a̸ = c ∧ b̸ = c ∧ a < b + c ∧ b < a + c ∧ c < a + b}  
 + D4 = {(a, b, c) | a = b + c}  
 + D5 = {(a, b, c) | a > b + c}
-![t|400x00](../img/fit5171-20230618-6.png)  
+![fit5171 20230618 6](https://s3.greenhuang.com/docs/fit5171-20230618-6.png)  
 
 ### testing effort
-![t|400x00](../img/fit5171-20230614-18.png)
+![fit5171 20230614 18](https://s3.greenhuang.com/docs/fit5171-20230614-18.png)
 
 ### Difference Between Equivalence Class Testing & Boundary Value Analysis:
 [Equivalence Class Testing: Complete Guide |Professionalqa.com](https://www.professionalqa.com/equivalence-class-testing)  
@@ -268,17 +268,17 @@ equivalence classes:
 2. 点Node代表 Statement  
 3. 边Edge代表 Flow  
 4. 多行Statement可浓缩
-![t|400x00](../img/fit5171-20230614-20.png)
+![fit5171 20230614 20](https://s3.greenhuang.com/docs/fit5171-20230614-20.png)
 ### DD-path （Decision-to-decision path 决策到决策路径）  
 主要着眼测试覆盖率问题。程序有向图中存在分支，覆盖率考虑的是对各个分支情况的测试覆盖程度，因此对有向图中线性串行的部分进行压缩，在压缩图(即DD-路径)的基础上进行测试用例设计，用测试覆盖指标考察测试效果 
-![t|400x00](../img/fit5171-20230614-21.png)  
+![fit5171 20230614 21](https://s3.greenhuang.com/docs/fit5171-20230614-21.png)  
 ###  Basic Path Test 基础路径测试 - 找出最佳测试路径
-![t|400x00](../img/fit5171-20230614-22.png)
+![fit5171 20230614 22](https://s3.greenhuang.com/docs/fit5171-20230614-22.png)
 ## week6
 ### Functional decomposition 功能分解 / Block Diagram 模块图
 1. 每一个方块代表了系统中一种功能  
 2. 是软件设计的第一个草图  
-![t|400x00](../img/fit5171-20230615.png)
+![fit5171 20230615](https://s3.greenhuang.com/docs/fit5171-20230615.png)
 ### Integration Testing
 1. System - hierarchically composed of units  
 2. Objectives - testing of interfacing and interaction of units To expose problems arising from the combination To find a working solution from components  
@@ -302,25 +302,25 @@ In path-based integration testing, the system is tested for different combinatio
 在基于路径的集成测试中，测试系统的不同输入组合，并将生成的输出路径与预期的输出路径进行比较。该技术旨在确保当输入组合以实现不同的结果时，系统正常运行。
 #### Module Execution Path (MEP)
 message method sequence of module execution paths  
-![t|400x00](../img/fit5171-20230615-1.png)
-![t|400x00](../img/fit5171-20230615-2.png)
+![fit5171 20230615 1](https://s3.greenhuang.com/docs/fit5171-20230615-1.png)
+![fit5171 20230615 2](https://s3.greenhuang.com/docs/fit5171-20230615-2.png)
 ## week8
 ### Software complexity metrics 软件（复杂度）度量 - Structure 结构度量
 + Control-flow structure: the sequence in which instructions are executed in a program.控制流结构：指令在程序中执行的顺序。  
 + Data-flow structure: the trail of a data item created or handled by a program. 数据流结构：一个程序中的数据项从创建到处理的轨迹。  
 + Data structure: the organization of the data itself, independent of the program. 数据结构：数据本身的组织，独立于程序。
 ### A decomposition tree
-![t|400x00](../img/fit5171-20230615-5.png)
+![fit5171 20230615 5](https://s3.greenhuang.com/docs/fit5171-20230615-5.png)
 Sequence: P1;P2 - Sequence of P1 & P2 Merge the terminal node of P1 with the initial node of P2. P1;P2 - P1 & P2 的序列 将 P1 的终端节点与 P2 的初始节点合并  
 Nesting: P1(P2 , x) - nesting of P2 onto P1 at node x Replace x with P2 ,P1(P2 , x) - 在节点 x 处将 P2 嵌套到 P1 上 用 P2 替换 x
-![t|400x00](../img/fit5171-20230615-3.png)
-![t|400x00](../img/fit5171-20230615-4.png)
-![t|400x00](../img/fit5171-20230615-6.png)
+![fit5171 20230615 3](https://s3.greenhuang.com/docs/fit5171-20230615-3.png)
+![fit5171 20230615 4](https://s3.greenhuang.com/docs/fit5171-20230615-4.png)
+![fit5171 20230615 6](https://s3.greenhuang.com/docs/fit5171-20230615-6.png)
 ### Morphology metrics
-![t|400x00](../img/fit5171-20230615-7.png)
-![t|400x00](../img/fit5171-20230615-8.png)
-![t|400x00](../img/fit5171-20230615-9.png)
-![t|400x00](../img/fit5171-20230615-10.png)
+![fit5171 20230615 7](https://s3.greenhuang.com/docs/fit5171-20230615-7.png)
+![fit5171 20230615 8](https://s3.greenhuang.com/docs/fit5171-20230615-8.png)
+![fit5171 20230615 9](https://s3.greenhuang.com/docs/fit5171-20230615-9.png)
+![fit5171 20230615 10](https://s3.greenhuang.com/docs/fit5171-20230615-10.png)
 ## week9
 ### mutation testing 突变/变异测试
 [Mutation operators](https://pitest.org/quickstart/mutators/)  
@@ -329,12 +329,12 @@ Nesting: P1(P2 , x) - nesting of P2 onto P1 at node x Replace x with P2 ,P1(P2 ,
 3. MT生成的代码是根据Compile生成的代码而不是原代码 （不改变 source code）
 4. Killing the mutation  Each mutated version is called a mutant and tests detect and  reject mutants by causing the behavior of the original version to  differ from the mutant. This is called killing the mutant. 简言之，mutation test会在程序编译或运行时插入微小的差异(mutant)， 理想的测试用例应当能够检测出这些差异带来的程序行为异常。如果一 个mutant引发的程序行为异常能够被testcases捕捉并导致testcases失 败，则称mutant被消灭（killed）；反之如果mutant带来的程序行为变 化无法被测试用例捕捉，则称mutant存活（survived/ alive）
 5. quivalent mutation a mutant cannot be killed by any set of test data. This type of mutants is said to be functionally equivalent to the originalprogram当改变任何测试数据，这个test都fail不了mutation叫做equivalent
-![t|600x00](../img/fit5171-20230615-11.png)
+![fit5171 20230615 11](https://s3.greenhuang.com/docs/fit5171-20230615-11.png)
 ## week11
 ### Finding threads- Finite State Machines
-![t|400x00](../img/fit5171-20230615-12.png)
-![t|400x00](../img/fit5171-20230615-13.png)
-![t|400x00](../img/fit5171-20230615-14.png)
+![fit5171 20230615 12](https://s3.greenhuang.com/docs/fit5171-20230615-12.png)
+![fit5171 20230615 13](https://s3.greenhuang.com/docs/fit5171-20230615-13.png)
+![fit5171 20230615 14](https://s3.greenhuang.com/docs/fit5171-20230615-14.png)
 # Mock exam
 ## Unit Testing
 ### Q1
@@ -406,24 +406,24 @@ Output: the best value
 */
 ```
 #### program graph
-![t|300x00](../img/fit5171-20230615-16.png)
+![fit5171 20230615 16](https://s3.greenhuang.com/docs/fit5171-20230615-16.png)
 #### cyclomatic complexity of the program graph
 C= E-V+2p E: 边的数量 N: 节点的数量 P: 连通分量的数量
 Total branches (E) = 2 (for the first "if" statement) + 2 (for the second "if" statement) + N (for the "foreach" loop condition) 总分支 （E） = 2（对于第一个“if”语句）+ 2（对于第二个“if”语句）+ N（对于“foreach”循环条件）
 Cyclomatic Complexity = E - N + 2  = (2 + 2 + N) - N + 2 = 6
 ### Q3
 #### program graph
-![](../img/fit5171-20230616-1.png)
+![fit5171 20230616 1](https://s3.greenhuang.com/docs/fit5171-20230616-1.png)
 #### Cyclomatic complexity
 draw the final condensed graph for the program graph you came up with in part (a)  above, and ii. calculate the Cyclomatic complexity of the condensed graph you draw  
 
 ### Q3
 Given an undirected graph G with vertices V = {1, 2, 3, 4, 5, 6, 7, 8} and edges E = {12, 14, 16, 22, 23, 28, 34, 35, 67, 78}
 #### undirected graph/directed graph
-![t|400x00](../img/fit5171-20230618-3.png)  
+![fit5171 20230618 3](https://s3.greenhuang.com/docs/fit5171-20230618-3.png)  
 #### node degree
 Calculate the degree of each node in the graph.
-![t|300x00](../img/fit5171-20230618-4.png)  
+![fit5171 20230618 4](https://s3.greenhuang.com/docs/fit5171-20230618-4.png)  
 
 #### Cyclomatic number
 The Cyclomatic number of of G, `V (G) = #E − #V + p = 10 − 8 + 1 = 3`  
@@ -437,7 +437,7 @@ Yes, (12, 23, 16, 67), (12, 28, 16, 67), and (12, 23, 34, 16, 67, 78) are semi-p
 0-connected: none. 1-connected: 2 & 6, 3 & 7, etc. 2-connected: 1 & 2, 6 & 7, etc. 3-connected: none.  
 
 #### reachability matrix
-![t|200x00](../img/fit5171-20230618-5.png)
+![fit5171 20230618 5](https://s3.greenhuang.com/docs/fit5171-20230618-5.png)
 
 ## Integration Testing
 ### Q3 select reasonable integration method 
@@ -455,7 +455,7 @@ the ranking of fault isolation from highest to lowest:
 A is the worst. E>F>G. B≈C > D 
 pairwise is from two random points but Decomposition only select one unknown pts.
 ### Q2
-![](../img/fit5171-20230618-7.png)  
+![fit5171 20230618 7](https://s3.greenhuang.com/docs/fit5171-20230618-7.png)  
 ####   MM-paths  
 For example, the MM-path for component D (UserDAO) is MEP (D, 1) = (1, 2, 3). The MM-path for component E (MissionDAO) is MEP (E , 1) = (1, 2, 3)  
 + MEP(A,1) = (1,2,3,5)  MEP(A,2) = (1,2,4)  MEP(A,3) = (5)  

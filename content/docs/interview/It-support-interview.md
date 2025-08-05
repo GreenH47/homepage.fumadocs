@@ -88,7 +88,7 @@ I always document each support ticket, noting the problem and solution. This pra
 
 ## (ITIL Priority Matrix) How do you prioritize multiple IT support requests from different users? 如何对来自不同用户的多个 IT 支持请求进行优先排序？
 [ITIL Priority Matrix: How to Use it for Incident, Problem, Service Request, and Change Management](https://blog.invgate.com/itil-priority-matrix)  
-![](../img/It-support-interview-20250722.png)
+![It support interview 20250722](https://s3.greenhuang.com/docs/It-support-interview-20250722.png)
 _When faced with multiple IT support requests, I prioritize them based on the urgency and impact of each issue on the business operations. First, I assess if any request is related to a critical system or process that could significantly affect productivity or revenue generation. These high-priority issues are addressed immediately to minimize downtime and potential losses._  
 **示例：** _“当面临多个 IT 支持请求时，我会根据每个问题的紧急程度及其对业务运营的影响来确定优先级。首先，我会评估是否有任何请求与可能显著影响生产力或创收的关键系统或流程相关。这些高优先级问题会立即得到处理，以最大限度地减少停机时间和潜在损失。”_
 

@@ -6,8 +6,8 @@ description: A concise run-book to set up a Ubuntu VM in Proxmox, configure netw
 [Create a Ubuntu VM in Proxmox and setup networking | Snel.com](https://www.snel.com/support/ubuntu-vm-in-proxmox-and-networking-setup/)  
 
 [Installing ubuntu server 24 04LTS on Proxmox 8 - YouTube](https://www.youtube.com/watch?v=wMtSGAVxQ9o)  
-![](../img/ubuntu-20250528.png)
-![](../img/ubuntu-20250528-1.png)
+![ubuntu 20250528](https://s3.greenhuang.com/docs/ubuntu-20250528.png)
+![ubuntu 20250528 1](https://s3.greenhuang.com/docs/ubuntu-20250528-1.png)
 ```
 ssh greenh@192.168.0.153
 ```

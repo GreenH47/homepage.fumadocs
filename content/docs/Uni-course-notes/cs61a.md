@@ -110,7 +110,7 @@ def hailstone(n):
 
 # Week2  control environment
 ## different between break return continue
-![](../img/cs61a-20230110.png)  
+![cs61a 20230110](https://s3.greenhuang.com/docs/cs61a-20230110.png)  
 ```py
 def name_length(names):
     i = 0

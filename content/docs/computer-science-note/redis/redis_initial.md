@@ -52,9 +52,9 @@ exit
 redis-cli -a pwd --scan --pattern '*'
 
 ```
-![](../../img/redis_initial-20230927.png)
-![](../../img/redis_initial-20230927-1.png)
-![](../../img/redis_initial-20230927-2.png)
+![redis initial 20230927](https://s3.greenhuang.com/docs/redis_initial-20230927.png)
+![redis initial 20230927 1](https://s3.greenhuang.com/docs/redis_initial-20230927-1.png)
+![redis initial 20230927 2](https://s3.greenhuang.com/docs/redis_initial-20230927-2.png)
 
 ```bash
 ubuntu@ip-:~$ redis-cli -a pwd --scan --pattern '*'

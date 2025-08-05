@@ -15,12 +15,12 @@ This assignment uses questions at the end of the presentation as the method of v
 
 [Building a Crowdsensing Platform Based on Spatio-Temporal Fencing | SpringerLink](https://link.springer.com/chapter/10.1007/978-3-030-94822-1_52)
 
-![](../img/fit5046-20230326-1.png)  
+![fit5046 20230326 1](https://s3.greenhuang.com/docs/fit5046-20230326-1.png)  
 
-![](../img/fit5046-20230326-6.png)  
-![](../img/fit5046-20230326-7.png) 
-![](../img/fit5046-20230326-8.png)
-![](../img/fit5046-20230326-5.png)
+![fit5046 20230326 6](https://s3.greenhuang.com/docs/fit5046-20230326-6.png)  
+![fit5046 20230326 7](https://s3.greenhuang.com/docs/fit5046-20230326-7.png) 
+![fit5046 20230326 8](https://s3.greenhuang.com/docs/fit5046-20230326-8.png)
+![fit5046 20230326 5](https://s3.greenhuang.com/docs/fit5046-20230326-5.png)
 #  Android Project Proposal 20% Due date Friday, 21 April 2023, 11:55 PM
 Android Project Proposal 20%
 
@@ -73,7 +73,7 @@ Section 2 – Key requirements
 (PASS level)
 
 Your proposed app must include the following screens and Android components as the minimum requirements
-![](../img/fit5046_assignment-20230405.png)
+![fit5046 assignment 20230405](https://s3.greenhuang.com/docs/fit5046_assignment-20230405.png)
 
 section 3 – Achievement Levels
 
@@ -132,13 +132,13 @@ a brief description of two (the most popular and well-known) apps and how your a
 In this section, you will provide a system architecture diagram of your proposed app that shows the front-side and server-side components, plus all the key Android components mentioned in Section 2 Part 2 (refer to the example below). You also need to provide a short paragraph about these components and how they work together.
 
 This diagram is only an example. You must show the name of APIs you will use, the server-side database (e.g. Firebase). You also must show what Android components you will include in another box. If you are using any other components, show it in the diagram
-![](../img/fit5046_assignment-20230405-1.png)
+![fit5046 assignment 20230405 1](https://s3.greenhuang.com/docs/fit5046_assignment-20230405-1.png)
 
 ## 4. The UI Design and Screen Mockups
 
 In this section, you need to provide screen mockups created by any prototyping tool and the navigation flow between them (using arrows). You need to provide a meaningful title for each screen. The figure below is just a guide [Design navigation graphs | Android Developers](https://developer.android.com/guide/navigation/navigation-design-graph)
 
-![](../img/fit5046_assignment-20230405-2.png)
+![fit5046 assignment 20230405 2](https://s3.greenhuang.com/docs/fit5046_assignment-20230405-2.png)
 ## 5. Advanced features
 
 //additional components based on Section 3 and how you will achieve them (any SKD details, or online sources and tutorials)
@@ -153,7 +153,7 @@ In this section, you need to provide screen mockups created by any prototyping t
 
 Please provide the name of tasks and the name of the group member(s) who did the task
 in the table below
-![](../img/fit5046_assignment-20230405-3.png)
+![fit5046 assignment 20230405 3](https://s3.greenhuang.com/docs/fit5046_assignment-20230405-3.png)
 
 Sure, I understand. Let's analyze the proposed healthy Android app.  
 当然，我明白。让我们分析一下建议的健康 Android 应用程序。
