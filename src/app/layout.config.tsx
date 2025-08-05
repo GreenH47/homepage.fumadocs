@@ -2,6 +2,7 @@ import { BookIcon, Linkedin, Mail, PhoneCall } from 'lucide-react';
 import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
 import InlineSVG from 'react-inlinesvg';
 import Logo from '@/public/images/favicon.ico';
+import Image from 'next/image';
 
 
 /**
@@ -14,15 +15,7 @@ import Logo from '@/public/images/favicon.ico';
 export const baseOptions: BaseLayoutProps = {
     githubUrl: 'https://github.com/GreenH47',
     links: [
-        {
-            text: 'Blog',
-            url: '/docs',
-        },
 
-        {
-            text: 'Resume',
-            url: 'https://download.greenhuang.com/GreenHuang-IT-Support.pdf',
-        },
 
         {
             type: 'icon',
@@ -57,4 +50,17 @@ export const baseOptions: BaseLayoutProps = {
         },
     ],
 };
+
+export const logo = (
+    <>
+        <Image
+            alt="Fumadocs"
+            src={Logo}
+            sizes="100px"
+            className="hidden w-20 md:w-24 [.uwu_&]:block"
+            aria-label="Fumadocs"
+        />
+
+    </>
+);
 

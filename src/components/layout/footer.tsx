@@ -6,37 +6,52 @@ import { EXTERNAL_LINKS } from '@/lib/data';
 
 const Footer = () => {
   return (
-    <footer className="w-full  py-6">
-      <div className="flex items-center justify-center gap-1">
-        <Typography className="flex items-center" variant="body3">
-          <Copyright className="mr-1 inline-block h-4 w-4" />
-          {new Date().getFullYear()} |&nbsp;
-
-          Forked from  &nbsp;
-          <Link
-              noCustomization
-              externalLink
-              withUnderline
-              href={EXTERNAL_LINKS.sagarshah_dev}
+      <footer className="w-full py-6">
+        <div className="flex flex-wrap items-center justify-center gap-x-1 gap-y-2 text-center">
+          <Typography
+              variant="body3"
+              className="flex flex-wrap items-center justify-center gap-x-1 gap-y-2"
           >
-            sagarshah.dev.
-          </Link>
+            {/* copyright + year */}
+            <span className="flex items-center whitespace-nowrap">
+            <Copyright className="mr-1 inline-block h-4 w-4" />
+              {new Date().getFullYear()}
+          </span>
 
-          &nbsp;Redesign️ by Green Huang.
+            {/* separator */}
+            <span aria-hidden="true">|</span>
 
-          Blog page powered by&nbsp;
-          <Link
-              noCustomization
-              externalLink
-              withUnderline
-              href={EXTERNAL_LINKS.fumadocs}
-          >
-            fumadocs
-          </Link>
+            {/* fork attribution */}
+            <span className="whitespace-nowrap">
+            Forked from{' '}
+              <Link
+                  noCustomization
+                  externalLink
+                  withUnderline
+                  href={EXTERNAL_LINKS.sagarshah_dev}
+              >
+              sagarshah.dev
+            </Link>
+          </span>
 
-        </Typography>
-      </div>
-    </footer>
+            {/* redesign credit */}
+            <span className="whitespace-nowrap">Redesign by Green Huang</span>
+
+            {/* blog engine */}
+            <span className="whitespace-nowrap">
+            Blog powered by{' '}
+              <Link
+                  noCustomization
+                  externalLink
+                  withUnderline
+                  href={EXTERNAL_LINKS.fumadocs}
+              >
+              Fumadocs
+            </Link>
+          </span>
+          </Typography>
+        </div>
+      </footer>
   );
 };
 

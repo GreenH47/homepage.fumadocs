@@ -7,10 +7,10 @@ import Link from 'next/link';
 
 const TestimonialsSection = () => {
   return (
-    <Container id="references" className="">
+    <Container id="recommendations" className="">
       <div className="flex flex-col items-center gap-4">
         <div className="self-center">
-          <Tag label="Reference" />
+          <Tag label="Recommendations" />
         </div>
         <Typography variant="subtitle" className="max-w-xl text-center">
           Nice things people have said about me:

@@ -55,7 +55,44 @@ export const metadata: Metadata = {
 export default function Layout({children}: { children: ReactNode }) {
     return (
 
-            <HomeLayout {...baseOptions}>{children}</HomeLayout>
+            <HomeLayout {...baseOptions}
+                        links={[
+                            {
+                                text: 'Blog',
+                                url: '/docs',
+                                active: 'nested-url',
+
+                            },
+
+                            {
+                                text: 'Resume',
+                                url: 'https://download.greenhuang.com/GreenHuang-IT-Support.pdf',
+                                active: 'nested-url',
+                            },
+
+                            {
+                                text: 'About',
+                                url: '#about',
+                                active: 'nested-url',
+                            },
+
+                            {
+                                text: 'Employment',
+                                url: '#employment',
+                                active: 'nested-url',
+                            },
+
+                            {
+                                text: 'Recommendations',
+                                url: '#recommendations',
+                                active: 'nested-url',
+                            },
+
+                        ]}
+
+            >
+                {children}
+            </HomeLayout>
 
     );
 }
