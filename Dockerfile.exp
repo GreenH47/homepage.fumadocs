@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1.4
 
 ########## deps: full install, cached ##########
-FROM --platform=linux/arm64 node:20-bookworm-slim AS deps
+FROM --platform=linux/arm64 node:22-bookworm-slim AS deps
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 RUN corepack enable && corepack prepare pnpm@latest --activate
@@ -22,7 +22,7 @@ RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
 RUN pnpm prune --prod
 
 ########## runtime: slim, prod-only ##########
-FROM --platform=linux/arm64 node:20-bookworm-slim AS runtime
+FROM --platform=linux/arm64 node:22-bookworm-slim AS runtime
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 RUN corepack enable && corepack prepare pnpm@latest --activate

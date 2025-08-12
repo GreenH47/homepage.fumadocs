@@ -30,12 +30,12 @@ import LogoSkillsProxmox from '/public/images/skills-logo/logo-proxmox.svg';
 import LogoSkillsNetworking from '/public/images/skills-logo/logo-networking.svg';
 
 import LogoWorkKingdomTechnology from '/public/images/work-logo/KingdomTechnology.png';
-import LogoWorkTechdomain from '/public/images/work-logo/tech_domain.jpeg';
+
 import LogoWorkRans from '/public/images/work-logo/rans.png';
 import LogoWorkOzworld from '/public/images/work-logo/ozworld.jpg';
 import LogoWorkJinhuan from '/public/images/work-logo/jinhuan.png';
 import LogoWorkNaton from '/public/images/work-logo/naton.jpg';
-
+import LogoWorkSwazzy from '/public/images/work-logo/swazzy.png';
 
 import WechatIcon from '/public/images/logos/wechat.svg';
 
@@ -233,12 +233,31 @@ export const TECHNOLOGIES: TechDetails[] = [
 
 export const EXPERIENCES: ExperienceDetails[] = [
     {
+        logo: LogoWorkSwazzy,
+        logoAlt: 'Swazzy Synergy logo',
+        position: 'Swazzy Synergy - Level 1 IT Support Engineer',
+        companyUrl: 'https://swazzy.support/',
+        startDate: new Date(2025, 7, 14), // 0-indexed month: 7 = August
+        currentlyWorkHere: true,
+        summary: [
+            'Deliver L1/L2 support via phone, email, remote tools, and onsite—resolving hardware, software, and networking incidents against SLAs.',
+            'Image, deploy, and configure Windows PCs/laptops and peripherals; join devices to the domain, apply baseline hardening, and install the standard app stack.',
+            'Create and manage user accounts, groups, permissions, and licenses in Active Directory and Microsoft 365; handle password resets and MFA issues.',
+            'Monitor RMM dashboards and respond to alerts; perform OS/app/firmware patching and verify update compliance.',
+            'Set up and troubleshoot LAN/WAN/Wi-Fi/VPN connectivity; assist with network changes under change control.',
+            'Maintain accurate asset, license, and configuration records; document work in the ticketing system (ServiceNow/Jira) and client KB (Hudu).',
+            'Follow escalation procedures for unresolved issues; contribute to root-cause analysis and problem management to prevent recurrences.',
+            'Coordinate with vendors for warranty claims and procurement; support after-hours cutovers and maintenance windows when required.'
+        ],
+    },
+
+    {
         logo: LogoWorkKingdomTechnology,
         logoAlt: 'Kingdom Technology logo',
         position: 'Kingdom Technology - Front-End Developer Intern',
         companyUrl: 'https://kingdomtechnology.framer.website/',
         startDate: new Date(2025, 4),
-        currentlyWorkHere: true,
+        endDate: new Date(2025, 7),
         summary: [
             'Collaborating on building MVPs for startups using Next.js, Tailwind CSS Integrating Strapi CMS for dynamic content management.',
             'Implementing complex forms with React Hook Form and Zod for robust validation.\n',
@@ -246,19 +265,7 @@ export const EXPERIENCES: ExperienceDetails[] = [
             'Utilising Supabase for backend services and real-time data handling\n',
         ],
     },
-    {
-        logo: LogoWorkTechdomain,
-        logoAlt: 'Techdomain logo',
-        position: 'Tech Domain - Freelance IT Technician Deskside & Network Support',
-        companyUrl: 'https://www.techdomain.com.au/',
-        startDate: new Date(2025, 3),
-        currentlyWorkHere: true,
-        summary: [
-            'Deliver Windows 10/11 migrations and software upgrades with SCCM during deskside support visits, ensuring zero-data-loss cut-overs',
-            'Troubleshoot service-desk tickets on-site and replace critical components (SSDs, hard drives, motherboards) on HP/Dell laptops and desktops.\n',
-            'Perform IMAC tasks, asset inventory audits, and ITAD data-wipe & decommissioning to maintain accurate lifecycle records.\n',
-        ],
-    },
+
 
     {
         logo: LogoWorkRans,
