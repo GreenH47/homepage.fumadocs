@@ -34,31 +34,27 @@ const AboutMeSection = () => (
                 <Typography variant="h3">Curious about me? Here you have it:</Typography>
 
                 <Typography>
-                    I&apos;m a passionate&nbsp;
-                    <Link
-                        noCustomization
-                        externalLink
-                        withUnderline
-                        href={EXTERNAL_LINKS.GITHUB}
-                    >
-                        self-proclaimed programmer
-                    </Link>
-                    &nbsp;who specialises in full-stack development (React.js &amp; C#).
-                    I’m enthusiastic about bringing the technical and visual aspects of
-                    digital products to life. User experience, pixel-perfect design and
-                    writing clear, readable, highly-performant code all matter to me.
+                    I'm a curious and dedicated IT support engineer with a background
+                    in full-stack development. After starting my career building web applications,
+                    I discovered that my true passion lies in IT infrastructure and support.
+                    I find great satisfaction in resolving technical issues—whether
+                    I'm imaging a fleet of new Windows 11 laptops or troubleshooting a tricky network
+                    outage—and helping people stay productive.
                 </Typography>
 
                 <Typography>
-                    I began my journey as a web developer in 2021; since then I’ve
-                    continued to grow, taking on new challenges and learning the latest
-                    technologies. Now, three years in, I’m building cutting-edge web apps
-                    with Next.js, TypeScript, NestJS and more.
+                    In my work I emphasize clear communication and documentation,
+                    writing knowledge base articles and keeping tickets up to date
+                    so solutions are shared with the whole team. I also enjoy the challenge
+                    of learning new technologies and refining processes to make IT support more efficient.
+                    At home, I experiment with new tools in my lab, setting up switches and VLANs or even running a
+                    Kubernetes cluster to broaden my skills beyond the helpdesk.
                 </Typography>
 
                 <Typography>
-                    I’m very much a progressive thinker and enjoy working on products
-                    end-to-end, from ideation all the way to delivery.
+                    As an aspiring network engineer, I'm continuously building on my IT support foundation to take
+                    on larger network projects. I thrive on hands-on problem solving and never stop
+                    learning—whether it's earning new certifications or exploring the latest cloud services.
                 </Typography>
             </div>
         </div>

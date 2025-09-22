@@ -235,21 +235,22 @@ export const EXPERIENCES: ExperienceDetails[] = [
     {
         logo: LogoWorkSwazzy,
         logoAlt: 'Swazzy Synergy logo',
-        position: 'Swazzy Synergy - Level 1 IT Support Engineer',
+        position: 'Swazzy Synergy – IT Support Engineer',
         companyUrl: 'https://swazzy.support/',
         startDate: new Date(2025, 7, 14), // 0-indexed month: 7 = August
         currentlyWorkHere: true,
         summary: [
-            'Deliver L1/L2 support via phone, email, remote tools, and onsite—resolving hardware, software, and networking incidents against SLAs.',
-            'Image, deploy, and configure Windows PCs/laptops and peripherals; join devices to the domain, apply baseline hardening, and install the standard app stack.',
-            'Create and manage user accounts, groups, permissions, and licenses in Active Directory and Microsoft 365; handle password resets and MFA issues.',
-            'Monitor RMM dashboards and respond to alerts; perform OS/app/firmware patching and verify update compliance.',
-            'Set up and troubleshoot LAN/WAN/Wi-Fi/VPN connectivity; assist with network changes under change control.',
-            'Maintain accurate asset, license, and configuration records; document work in the ticketing system (ServiceNow/Jira) and client KB (Hudu).',
-            'Follow escalation procedures for unresolved issues; contribute to root-cause analysis and problem management to prevent recurrences.',
-            'Coordinate with vendors for warranty claims and procurement; support after-hours cutovers and maintenance windows when required.'
+            'Provide deskside and remote L1/L2 support across multiple client sites, resolving Windows, Microsoft 365, and networking incidents within SLA targets.',
+            'Onboard and offboard staff end-to-end: configure AD/Entra ID accounts, assign/revoke Microsoft 365 licenses, and manage Exchange Online mailboxes, shared access, and permissions.',
+            'Deploy and troubleshoot Windows 11 endpoints: imaging, driver/firmware updates, BitLocker enablement, and resolving BSODs or hardware faults (RAM/SSD replacements).',
+            'Investigate and resolve connectivity issues: trace patch panel to switch mappings, restore LAN/print access, verify VLAN/port status, and assist with Wi-Fi/VPN triage.',
+            'Monitor RMM alerts and event logs; apply OS/app/firmware patches, remediate update failures, and escalate complex issues under change control.',
+            'Maintain clear documentation in ServiceNow/Jira tickets and Hudu KB, including port mapping diagrams, how-to notes, and offboarding checklists.',
+            'Coordinate with vendors for warranty claims and replacements; assist with small deployments and after-hours cutovers to minimize downtime.',
+            'Contribute to root cause analysis (e.g., diagnosing faulty RAM causing WHEA logger errors) and share solutions to prevent recurring incidents.'
         ],
     },
+
 
     {
         logo: LogoWorkKingdomTechnology,

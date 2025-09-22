@@ -10,9 +10,9 @@ import {Metadata} from 'next';
 // import Footer from '@/components/layout/footer';
 import '@/global.css';
 
-const title = 'Green Huang | Full Stack Developer From Melbourne Australia.';
+const title = 'Green Huang | IT support engineer From Melbourne Australia.';
 const description =
-    'A self-proclaimed programmer who specializes in full stack develop and deployment.';
+    'I\'m a curious and dedicated IT support engineer with a background in full-stack development.';
 const url = 'https://greenhuang.com/';
 
 export const metadata: Metadata = {

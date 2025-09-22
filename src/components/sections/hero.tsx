@@ -33,12 +33,13 @@ const HeroSection = () => (
               <span className="inline-block animate-waving-hand">👋</span>
             </Typography>
             <Typography>
-              Hands-on deskside and remote support professional with Windows 10/11 imaging,
-              hardware break/fix and L1–L2 ticket resolution experience across corporate offices
-              and small data-centre sites. Skilled at SCCM deployments, AD administration,
-              VLAN & switch installs, and PowerShell automation that drives measurable uptime and
-              faster rollouts. Labs and certs (CKA, AWS SAA) demonstrate continuous learning and
-              disciplined change control.
+              IT Support Engineer delivering deskside and remote support across
+              multi-site SMB environments. Hands-on with Windows 10/11 builds,
+              hardware break/fix, Microsoft 365/Entra ID, and on-prem AD sync.
+              Comfortable juggling L1–L2 tickets, site visits, and small implementations
+              (PC rollouts, network patching, basic PBX). Known for clear customer comms,
+              accurate documentation, and steady, methodical troubleshooting.
+
 
             </Typography>
           </div>
