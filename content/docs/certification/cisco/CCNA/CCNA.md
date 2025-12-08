@@ -1,7 +1,8 @@
 ---
 title: Cisco CCNA 200-301
 description: how to perpare Cisco CCNA 200-301 exam with Jeremy’s IT Lab
----  
+---
+
 [Cisco Certified Network Associate - Cisco](https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html)  
 
 [CCNA Exam Topics](https://learningnetwork.cisco.com/s/ccna-exam-topics)  
@@ -11,5 +12,5 @@ description: how to perpare Cisco CCNA 200-301 exam with Jeremy’s IT Lab
 # Lecture
 ## Day 1 network devices  
 
-![](../../../img/CCNA-1760871330143.png)  
+![CCNA 1760871330143](https://s3.greenhuang.com/docs/CCNA-1760871330143.png)  
 
