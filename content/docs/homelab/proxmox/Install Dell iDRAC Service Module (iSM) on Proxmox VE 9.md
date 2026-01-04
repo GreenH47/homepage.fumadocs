@@ -52,10 +52,10 @@ Verify:核实：
 
 - Open iDRAC web UI.打开 iDRAC Web UI。
 - Go to: **iDRAC Settings → iDRAC Service Module**.转至： **iDRAC 设置 → iDRAC 服务模块** 。
-    ![](../../img/Install%20Dell%20iDRAC%20Service%20Module%20(iSM)%20on%20Proxmox%20VE%209-20251010.png)  
+    ![Install Dell iDRAC Service Module (iSM) on Proxmox VE 9 20251010|617x541](https://s3.greenhuang.com/docs/Install%20Dell%20iDRAC%20Service%20Module%20%28iSM%29%20on%20Proxmox%20VE%209-20251010.png)  
     
 - Confirm “Connected” state and host OS details under **Overview → Server → Summary**.在**概述 → 服务器 → 摘要**下确认“已连接”状态和主机操作系统详细信息。
-    ![](../../img/Install%20Dell%20iDRAC%20Service%20Module%20(iSM)%20on%20Proxmox%20VE%209-20251010-1.png)  
+    ![Install Dell iDRAC Service Module (iSM) on Proxmox VE 9 20251010 1|617x604](https://s3.greenhuang.com/docs/Install%20Dell%20iDRAC%20Service%20Module%20%28iSM%29%20on%20Proxmox%20VE%209-20251010-1.png)  
     
 
 
