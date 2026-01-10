@@ -8,10 +8,6 @@ const config = {
   reactStrictMode: true,
   // output: 'standalone',
 
-  eslint: {
-    /** WARNING: only use while you’re stabilising this feature branch */
-    /** ignoreDuringBuilds: true,*/
-  },
 
   images: {
     //Disables optimisation (and cache writes) altogether if you use an external CDN;
