@@ -10,7 +10,7 @@ const config = {
 
   eslint: {
     /** WARNING: only use while you’re stabilising this feature branch */
-    ignoreDuringBuilds: true,
+    /** ignoreDuringBuilds: true,*/
   },
 
   images: {

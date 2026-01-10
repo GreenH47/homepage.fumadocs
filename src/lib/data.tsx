@@ -61,7 +61,7 @@ export const EXTERNAL_LINKS = {
     sagarshah_dev:'https://github.com/shahsagarm/sagarshah.dev',
     fumadocs:'https://github.com/fuma-nama/fumadocs'
 
-    };
+};
 
 
 export const SOCIAL_LINKS = [
