@@ -57,6 +57,9 @@ or Go to Proxmox GUI. Select Datacenter | Directory Mappings. Click add to creat
 Select VM who will access share folder from Proxmox Host. Select _Hardware | Add | Virtiofs_
 ![windows lab 20250515](https://s3.greenhuang.com/docs/windows_lab-20250515.png)
 
+install QEMU guest agent [Qemu-guest-agent - Proxmox VE](https://pve.proxmox.com/wiki/Qemu-guest-agent)  
+
+
 ## setup static ip for my AD server
 go to router portal to check local network setting  
 ![windows lab 20250518](https://s3.greenhuang.com/docs/windows_lab-20250518.png)
