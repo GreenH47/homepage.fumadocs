@@ -107,3 +107,20 @@ rtt min/avg/max/mdev = 19.683/19.960/20.269/0.240 ms
 sudo apt install nginx
 sudo systemctl enable --now nginx   # start at boot
 ```
+
+
+# enable ssh
+
+generate ssh key on windows`ssh-keygen` files under `C:\Users\huang\.ssh`  
+
+```sh
+mkdir -p ~/.ssh
+nano ~/.ssh/authorized_keys
+# copy xx.pub files on it
+
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+
+```
+
+
