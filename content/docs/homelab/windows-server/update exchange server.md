@@ -34,3 +34,4 @@ Get-Command Exsetup.exe | ForEach-Object {$_.FileVersionInfo}
 
 ![update exchange server 1768043614960](https://s3.greenhuang.com/docs/update%20exchange%20server-1768043614960.png)
 
+if it failed try this script to run all exchange server services [Restart Exchange services with PowerShell script - ALI TAJRAN](https://www.alitajran.com/restart-exchange-services-powershell-script/)  

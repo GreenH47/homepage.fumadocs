@@ -33,6 +33,26 @@ password(all account is the same): 123qwe!@#QWE
 dism /online /set-edition:ServerDatacenter /productkey:WX4NM-KYWYW-QJJR4-XV3QB-6VM33 /accepteula
 ```
 
+##  install QEMU guest agent 
+[Qemu-guest-agent - Proxmox VE](https://pve.proxmox.com/wiki/Qemu-guest-agent)  
+Attach the ISO to your windows VM (virtio-*.iso)
+将 ISO 文件附加到您的 Windows 虚拟机 (virtio-*.iso)
+Go to the windows Device Manager
+转到 Windows 设备管理器
+Look for "PCI Simple Communications Controller"
+寻找“PCI 简单通信控制器”
+Right Click -> Update Driver and select on the mounted iso in `DRIVE:\vioserial\<OSVERSION>\` where `<OSVERSION>` is your Windows Version (e.g. 2k12R2 for Windows 2012 R2)
+
+
+After that, you have to install the qemu-guest-agent:  
+之后，您必须安装 qemu-guest-agent：
+
+1. Go to the mounted ISO in explorer  
+    在资源管理器中转到已安装的 ISO
+2. The guest agent installer is in the directory **guest-agent**  
+    来宾代理安装程序位于目录 **guest-agent** 中
+3. Execute the installer with double click (either **qemu-ga-x86_64.msi** (64-bit) or **qemu-ga-i386.msi** (32-bit)  
+    双击运行安装程序（ **qemu-ga-x86_64.msi** （64 位）或 **qemu-ga-i386.msi** （32 位））。
 ## setup active directory
 [How to set up Active Directory on a Windows Server - VPSBG.eu](https://www.vpsbg.eu/docs/how-to-set-up-active-directory-on-a-windows-server) 
 [IT: Entry Level Helpdesk (Renaming Server 2016 and Installing Active Directory) New Techs Part 2 - YouTube](https://www.youtube.com/watch?v=n43Qcj6m5cE&list=PLdh13bXVc6-k_u2RPqYAp8R8HtYT_ONht&index=2)  
@@ -57,7 +77,6 @@ or Go to Proxmox GUI. Select Datacenter | Directory Mappings. Click add to creat
 Select VM who will access share folder from Proxmox Host. Select _Hardware | Add | Virtiofs_
 ![windows lab 20250515](https://s3.greenhuang.com/docs/windows_lab-20250515.png)
 
-install QEMU guest agent [Qemu-guest-agent - Proxmox VE](https://pve.proxmox.com/wiki/Qemu-guest-agent)  
 
 
 ## setup static ip for my AD server
