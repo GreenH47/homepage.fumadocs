@@ -66,6 +66,9 @@ Set-ADForestMode -Identity "greenhuang.local" -ForestMode Windows2025Forest
 # If needed (or if you prefer explicit):
 Set-ADDomainMode -Identity "greenhuang.local" -DomainMode Windows2025Domain
 
+# force update for all dc
+Repadmin /syncall /d /e
+
 ```
 
 ![update domain forest 1768739401089](https://s3.greenhuang.com/docs/update-domain-forest-1768739401089.png)
