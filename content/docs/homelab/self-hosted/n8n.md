@@ -39,15 +39,21 @@ services:
     restart: unless-stopped
     ports:
       - "127.0.0.1:5678:5678"
+    # use 
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     env_file:
       - n8n.env
       - db.env
     volumes:
       - /home/ubuntu/n8n.webhook/data/n8n:/home/node/.n8n
 
+
+
 volumes:
   n8n_data:
   postgres_data_18:
+
 
 ```
 
@@ -108,12 +114,12 @@ sudo chmod -R u+rwX,go-rwx /home/ubuntu/n8n.webhook/data/postgres18
 locate in `/etc/nginx/sites-enabled/<yourdomain>.conf`  
 
 ```yaml
-# /etc/nginx/sites-enabled/bitwarden.greenhuang.com.conf
+# /etc/nginx/sites-enabled/<yourdomain>.conf
 # n8n server
 server {
     listen 80;
     listen [::]:80;
-    server_name n8n.greenhuang.com;
+    server_name <yourdomain>;
 
     return 302 https://$server_name$request_uri;
 }
@@ -127,7 +133,7 @@ server {
     ssl_certificate         /home/ubuntu/ssl/cert.pem;
     ssl_certificate_key     /home/ubuntu/ssl/key.pem;
 
-    server_name n8n.greenhuang.com;
+    server_name <yourdomain>;
 
     # CORS for everything under this vhost
     add_header Access-Control-Allow-Origin  http://localhost:3000 always;
@@ -182,3 +188,36 @@ check and apply it
 sudo nginx -t && sudo systemctl reload nginx
 ```
 
+
+# Trouble shoot
+## SSH  Unsupported key format
+[NodeJS : Cannot parse privateKey: Unsupported key format - YouTube](https://www.youtube.com/watch?v=SteZcUWKWlA)  
+
+[How could I connect by ssh node to my server? - Questions - n8n Community](https://community.n8n.io/t/how-could-i-connect-by-ssh-node-to-my-server/7651?utm_source=chatgpt.com)  
+
+[Change Private Key Format to Use with PuTTY](https://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/ggcs/Change_private_key_format_for_Putty/Change_private_key_format_for_Putty.html)  
+
+```shell
+ssh-keygen -t rsa -b 4096 -m PEM -f ~/.ssh/n8n_rsa -N ""
+cat ~/.ssh/n8n_rsa.pub >> ~/.ssh/authorized_keys
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys ~/.ssh/n8n_rsa
+
+# copy the ~/.ssh/n8n_rsa to the expression
+```
+
+## access docker host
+Make sure the n8n container can reach the host SSH service. In `docker-compose.yml` for `n8n`, add:  
+```yaml
+services:
+  n8n:
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+```
+
+Then in n8n SSH credentials:
+
+- Host: `host.docker.internal`
+- Port: `22`
+- User: `ubuntu`
+- Then paste the contents of `~/.ssh/n8n_rsa` into n8n SSH credential **Private Key**.  

@@ -2,7 +2,9 @@
 title: setup a vlan in proxmox using second NIC
 description: setup a vlan in proxmox using second NIC
 ---
-Create an isolated VM network (192.168.1.0/24) on Proxmox via the second NIC (eno2) connected to an old router (gateway 192.168.1.1). Keep DHCP/DNS provided by Windows Server (DC) at 192.168.0.201.  
+Create an isolated VM network (192.168.1.0/24) on Proxmox via the second NIC (eno2) connected to an old router (gateway 192.168.1.1). Keep DHCP/DNS provided by Windows Server (DC) at 192.168.0.201. 
+
+[Fetching Title#zbrs](https://www.virtualizationhowto.com/2025/07/how-i-use-vlans-to-isolate-docker-and-proxmox-services-free-worksheet/)  
 
 # Physical / IP layout物理/IP 布局
 
