@@ -189,7 +189,7 @@ sudo nginx -t && sudo systemctl reload nginx
 ```
 
 
-# Trouble shoot
+# trouble shoot
 ## SSH  Unsupported key format
 [NodeJS : Cannot parse privateKey: Unsupported key format - YouTube](https://www.youtube.com/watch?v=SteZcUWKWlA)  
 
@@ -220,4 +220,4 @@ Then in n8n SSH credentials:
 - Host: `host.docker.internal`
 - Port: `22`
 - User: `ubuntu`
-- Then paste the contents of `~/.ssh/n8n_rsa` into n8n SSH credential **Private Key**.  
+- 

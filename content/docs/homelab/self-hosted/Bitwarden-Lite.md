@@ -2,23 +2,23 @@
 title: Self hosted Bitwarden-Lite
 description: A guide to Self hosted Bitwarden-Lite on arm64v8 vps with postgre 18.
 ---
-[How to Install Bitwarden Lite on Your Synology NAS – Marius Hosting](https://mariushosting.com/how-to-install-bitwarden-lite-on-your-synology-nas/)  
+PLEASE check this repo [GitHub - GreenH47/bitwarden-n8n-backup](https://github.com/GreenH47/bitwarden-n8n-backup)  for more details  
+
+
+[How to Install Bitwarden Lite on Your Synology NAS – Marius Hosting](https://mariushosting.com/how-to-install-bitwarden-lite-on-your-synology-nas/)
 
 [Lite Deployment \| Bitwarden](https://bitwarden.com/help/install-and-deploy-lite/)
 
-[Lightweight and flexible: Bitwarden lite self-host deployment is now generally available \| Bitwarden](https://bitwarden.com/blog/lightweight-and-flexible-bitwarden-lite-self-host-deployment/)  
-
+[Lightweight and flexible: Bitwarden lite self-host deployment is now generally available \| Bitwarden](https://bitwarden.com/blog/lightweight-and-flexible-bitwarden-lite-self-host-deployment/)
 
 # Recommended architecture (secure-by-default)
 
 - Public Internet → **Reverse proxy (TLS)** → Bitwarden Lite container
-- PostgreSQL container on a **private Docker network only** (no public port)PostgreSQL 
+- PostgreSQL container on a **private Docker network only** (no public port)PostgreSQL
 - Backups：
-    
-    - **pg_dump** (database) + backup of `/etc/bitwarden` volume (config/data)**
-        
-    - Store offsite to **S3** or **Google Drive via rclone**
 
+  - **pg_dump** (database) + backup of `/etc/bitwarden` volume (config/data)
+  - Store offsite to **S3**
 
 # OS + network hardening baseline (VPS)
 
@@ -41,7 +41,9 @@ sudo reboot
 ```
 
 # setup bitwarden server
+
 ## files tree
+
 ```shell
 ubuntu@mainserver:~/bitwarden$ tree
 .
@@ -60,7 +62,9 @@ ubuntu@mainserver:~/bitwarden$ tree
 ├── docker-compose.yml
 └── settings.env
 ```
+
 ## yaml
+
 ```yaml
 ---
 
@@ -91,6 +95,7 @@ services:
 ```
 
 ## environment files
+
 ```yaml
 # db.env
 # database
@@ -121,7 +126,8 @@ BW_DB_PASSWORD=    <replace it>
 globalSettings__disableUserRegistration=true
 ```
 
-## setup permission  
+## setup permission
+
 ```shell
 sudo chown -R 1000:1000 /home/ubuntu/bitwarden/bw_data/bitwarden /home/ubuntu/bitwarden/bw_data/logs
 sudo chmod -R u+rwX,go-rwx /home/ubuntu/bitwarden/bw_data/bitwarden /home/ubuntu/bitwarden/bw_data/logs
@@ -131,14 +137,17 @@ sudo chmod -R u+rwX,go-rwx /home/ubuntu/bitwarden/bw_data/pg
 
 ```
 
-apply and run it  
+apply and run it
+
 ```shell
 docker compose pull
 docker compose up -d
 
 ```
+
 ## setup reverse proxy
-locate in `/etc/nginx/sites-enabled/<yourdomain>.conf`  
+
+locate in `/etc/nginx/sites-enabled/<yourdomain>.conf`
 
 ```yaml
 # /etc/nginx/sites-enabled/<yourdomain>.conf
@@ -170,7 +179,7 @@ server {
         add_header Content-Type text/plain;
     }
 
-    
+  
 	location / {
         proxy_pass http://localhost:7500;
         proxy_set_header Host $host;
@@ -181,38 +190,40 @@ server {
 
 ```
 
-check and apply it   
+check and apply it
+
 ```shell
 sudo nginx -t && sudo systemctl reload nginx
 ```
+
 # Bitwarden Lite + Postgres 18 bind-mount + backups (host folders + ACL + n8n-friendly)
+
 ## Assumptions
+
 - tack directory: `/home/ubuntu/bitwarden`
 - Host data dirs (bind mounts):
-    
-    - `/home/ubuntu/bitwarden/bw_data/bitwarden` → `/etc/bitwarden`
-        
-    - `/home/ubuntu/bitwarden/bw_data/logs` → `/var/log/bitwarden`
-        
-    - `/home/ubuntu/bitwarden/bw_data/pg` → `/var/lib/postgresql` (Postgres 18+)
-        
+
+  - `/home/ubuntu/bitwarden/bw_data/bitwarden` → `/etc/bitwarden`
+  - `/home/ubuntu/bitwarden/bw_data/logs` → `/var/log/bitwarden`
+  - `/home/ubuntu/bitwarden/bw_data/pg` → `/var/lib/postgresql` (Postgres 18+)
 - Users:
-    
-    - `ubuntu` = UID **1001**
-        
-    - `n8n` container runs as UID **1000**
-        
+
+  - `ubuntu` = UID **1001**
+  - `n8n` container runs as UID **1000**
 - Postgres container user commonly uses UID/GID **999** (so the host `pg` directory must be writable by 999:999).
 
 ## One-time setup
-Install ACL tools  
+
+Install ACL tools
+
 ```shell
 sudo apt-get update
 sudo apt-get install -y acl
 
 ```
 
-Create directories  
+Create directories
+
 ```shell
 mkdir -p /home/ubuntu/bitwarden/bw_data/bitwarden \
          /home/ubuntu/bitwarden/bw_data/logs \
@@ -221,7 +232,8 @@ mkdir -p /home/ubuntu/bitwarden/bw_data/bitwarden \
 
 ```
 
-Ownership + base permissions  
+Ownership + base permissions
+
 ```shell
 # Bitwarden persisted state + logs owned by ubuntu
 sudo chown -R ubuntu:ubuntu \
@@ -244,7 +256,8 @@ sudo usermod -aG docker ubuntu
 
 ```
 
-ACLs so uid 1000 + 1001 can access Bitwarden state/logs (and inherit)  
+ACLs so uid 1000 + 1001 can access Bitwarden state/logs (and inherit)
+
 ```shell
 # Existing files/dirs: allow both uid 1000 and 1001 read/write (plus traverse on dirs)
 sudo setfacl -R -m u:1000:rwX,u:1001:rwX \
@@ -262,7 +275,8 @@ sudo setfacl -d -m u:1000:rwx,u:1001:rwx /home/ubuntu/bitwarden/backups
 
 ```
 
-Script permissions  
+Script permissions
+
 ```shell
 chmod +x /home/ubuntu/bitwarden/bw-backup.py
 chmod +x /home/ubuntu/bitwarden/delete-old-files.py
@@ -275,13 +289,14 @@ sudo setfacl -m u:1000:rwx,u:1001:rwx /home/ubuntu/bitwarden/delete-old-files.py
 ```
 
 ## backup flows
+
 ### backup for database and bitwarden data
-how to use  
+
+how to use
+
 ```shell
 python3 /home/ubuntu/bitwarden/bw-backup.py 20260124T020000Z
 ```
-
-
 
 ```python
 #!/usr/bin/env python3
@@ -568,7 +583,9 @@ if __name__ == "__main__":
 ```
 
 ### delete files and folder older than 30 days
-how to use  
+
+how to use
+
 ```shell
 # test run
 DAYS=30 DRY_RUN=1 python3 /home/ubuntu/bitwarden/delete-old-files.py 20270124T020000Z
@@ -811,11 +828,12 @@ if __name__ == "__main__":
 
 ## N8N workflow
 
-
-[Login - n8n.io](https://creators.n8n.io/workflows/12980)  
+[Login - n8n.io](https://creators.n8n.io/workflows/12980)
 
 ### setup
+
 1. mount your backups into `/home/node/.n8n-files`
+
 ```yaml
 services:
   n8n:
@@ -824,7 +842,8 @@ services:
       - /home/ubuntu/bitwarden/backups:/home/node/.n8n-files/bitwarden-backups:ro
 ```
 
-2. allow your custom mount path 
+2. allow your custom mount path
+
 ```yaml
 # n8n.env
 N8N_RESTRICT_FILE_ACCESS_TO=/home/node/.n8n-files;/data/bitwarden-backups
@@ -832,16 +851,21 @@ N8N_RESTRICT_FILE_ACCESS_TO=/home/node/.n8n-files;/data/bitwarden-backups
 ```
 
 3. restart the node
+
 ```shell
 docker compose down
 docker compose up -d
 ```
 
-### workflow and result  
+### workflow and result
+
 copy the workflow and change to your details  
-[Exporting and importing workflows \| n8n Docs](https://docs.n8n.io/courses/level-one/chapter-6/)   
+
+[Exporting and importing workflows \| n8n Docs](https://docs.n8n.io/courses/level-one/chapter-6/)  
+
 ![Bitwarden Lite 1769339421319](https://s3.greenhuang.com/docs/Bitwarden-Lite-1769339421319.png)
 
-![Bitwarden Lite 1769339731970](https://s3.greenhuang.com/docs/Bitwarden-Lite-1769339731970.png)
+![Bitwarden Lite 1769339731970|548x302](https://s3.greenhuang.com/docs/Bitwarden-Lite-1769339731970.png)
 
 ![Bitwarden Lite 1769339593421](https://s3.greenhuang.com/docs/Bitwarden-Lite-1769339593421.png)
+
