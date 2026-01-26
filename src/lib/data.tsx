@@ -1,33 +1,54 @@
 import {Github, Linkedin, Mail, PhoneCall} from 'lucide-react';
 
 // https://www.svgrepo.com/vectors/bash/
-import LogoJavascript from '/public/images/logos/icon-javascript.svg';
+//https://worldvectorlogo.com/
+
+import WechatIcon from '/public/images/logos/wechat.svg';
+
+/*
+* skills section
+*
+* */
 import LogoTypescript from '/public/images/logos/icon-typescript.svg';
 import LogoReact from '/public/images/logos/icon-react.svg';
 import LogoNextjs from '/public/images/logos/icon-nextjs.svg';
 import LogoNodejs from '/public/images/logos/icon-nodejs.svg';
 import LogoPostgreSQL from '/public/images/logos/icon-postgresql.svg';
-import LogoMongoDB from '/public/images/logos/icon-mongodb.svg';
-import LogoTailwindcss from '/public/images/logos/icon-tailwindcss.svg';
 
-import LogoGit from '/public/images/logos/icon-git.svg';
 
 import LogoSkillsAws from '/public/images/skills-logo/logo-aws.svg';
-import LogoSkillsCsharp from '/public/images/skills-logo/logo-csharp.svg';
+
 import LogoSkillsPython from '/public/images/skills-logo/logo-python.svg';
 import LogoSkillsKubernetes from '/public/images/skills-logo/logo-kubernetes.svg';
 import LogoSkillsDocker from '/public/images/skills-logo/logo-docker.svg';
 import LogoSkillsWordpress from '/public/images/skills-logo/logo-wordpress.svg';
 import LogoSkillsShopify from '/public/images/skills-logo/logo-shopify.svg';
 import LogoSkillsLinux from '/public/images/skills-logo/logo-linux.svg';
-//import LogoSkillsPCrepair from '/public/images/skills-logo/logo-pcrepair.svg';
+
 import LogoSkillsPCrepair from '/public/images/skills-logo/logo-pc-repair.png'
 
-import LogoSkillsSEO from '/public/images/skills-logo/logo-seo.svg';
+
 import LogoSkillsBash from '/public/images/skills-logo/logo-bash.svg';
-import LogoSkillsPrometheus from '/public/images/skills-logo/logo-prometheus.svg';
+
 import LogoSkillsProxmox from '/public/images/skills-logo/logo-proxmox.svg';
 import LogoSkillsNetworking from '/public/images/skills-logo/logo-networking.svg';
+
+import LogoSkillsActiveDirectory from '/public/images/skills-logo/logo-active-directory.svg';
+import LogoSkillsDocumentation from '/public/images/skills-logo/logo-documentation.svg';
+import LogoSkillsEntra from '/public/images/skills-logo/logo-entra.svg';
+import LogoSkillsExchange from '/public/images/skills-logo/logo-exchange.svg';
+import LogoSkillsM365 from '/public/images/skills-logo/logo-m365.svg';
+import LogoSkillsN8n from '/public/images/skills-logo/logo-n8n.svg';
+import LogoSkillsRmm from '/public/images/skills-logo/logo-rmm.svg';
+import LogoSkillsTicketing from '/public/images/skills-logo/logo-ticketing.svg';
+import LogoSkillsWindows from '/public/images/skills-logo/logo-windows.svg';
+import LogoSkillsWinServer from '/public/images/skills-logo/logo-winserver.svg';
+
+import LogoSkills from '/public/images/skills-logo/logo-.svg';
+/*
+* working section
+*
+* */
 
 import LogoWorkKingdomTechnology from '/public/images/work-logo/KingdomTechnology.png';
 
@@ -37,11 +58,17 @@ import LogoWorkJinhuan from '/public/images/work-logo/jinhuan.png';
 import LogoWorkNaton from '/public/images/work-logo/naton.jpg';
 import LogoWorkSwazzy from '/public/images/work-logo/swazzy.png';
 
-import WechatIcon from '/public/images/logos/wechat.svg';
+/*
+* Project section
+*
+* */
 
 import ProjectHomelab from '/public/images/project/project-proxmox.png';
 
-
+/*
+* Recommendation section
+*
+* */
 import Avator_Jingsheng_Chang from '/public/images/reference-logo/jingsheng-chang.jpg';
 import Avator_Daniel_Miao from '/public/images/reference-logo/daniel-miao.jpg';
 import Avator_Raj from '/public/images/reference-logo/raj-sachdev.jpg';
@@ -58,8 +85,8 @@ import {
 export const EXTERNAL_LINKS = {
     GITHUB: 'https://github.com/GreenH47',
     GITHUB_REPO: 'https://github.com/GreenH47/Green.homepage',
-    sagarshah_dev:'https://github.com/shahsagarm/sagarshah.dev',
-    fumadocs:'https://github.com/fuma-nama/fumadocs'
+    sagarshah_dev: 'https://github.com/shahsagarm/sagarshah.dev',
+    fumadocs: 'https://github.com/fuma-nama/fumadocs'
 
 };
 
@@ -75,12 +102,12 @@ export const SOCIAL_LINKS = [
     },
     {
         icon: Mail,
-        url: 'mailto:greenhuang47@gmail.com',
+        url: 'mailto:admin@greenhuang.com',
     },
-    {
-        icon: PhoneCall,
-        url: 'tel:+61478395855',
-    },
+    // {
+    //     icon: PhoneCall,
+    //     url: 'tel:+61478395855',
+    // },
 
     {
         img: WechatIcon,
@@ -90,146 +117,134 @@ export const SOCIAL_LINKS = [
 ];
 
 export const TECHNOLOGIES: TechDetails[] = [
+    // Core Microsoft / IT Support
     {
-        label: 'Javascript',
-        logo: LogoJavascript,
-        url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+        label: 'Windows',
+        logo: LogoSkillsWindows,
+        url: 'https://learn.microsoft.com/en-us/windows/',
     },
     {
-        label: 'Typescript',
-        logo: LogoTypescript,
-        url: 'https://www.typescriptlang.org/',
+        label: 'Windows Server',
+        logo: LogoSkillsWinServer,
+        url: 'https://learn.microsoft.com/en-us/windows-server/',
     },
     {
-        label: 'React',
-        logo: LogoReact,
-        url: 'https://react.dev/',
+        label: 'Active Directory',
+        logo: LogoSkillsActiveDirectory,
+        url: 'https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview',
     },
     {
-        label: 'Next.js',
-        logo: LogoNextjs,
-        url: 'https://nextjs.org/',
+        label: 'Entra ID',
+        logo: LogoSkillsEntra,
+        url: 'https://learn.microsoft.com/en-us/entra/identity/',
     },
     {
-        label: 'Node.js',
-        logo: LogoNodejs,
-        url: 'https://nodejs.org/en',
-    },
-
-    {
-        label: 'PostgreSQL',
-        logo: LogoPostgreSQL,
-        url: 'https://www.postgresql.org/',
+        label: 'Microsoft 365',
+        logo: LogoSkillsM365,
+        url: 'https://learn.microsoft.com/en-us/microsoft-365/?view=o365-worldwide',
     },
     {
-        label: 'MongoDB',
-        logo: LogoMongoDB,
-        url: 'https://www.mongodb.com/',
+        label: 'Exchange Online',
+        logo: LogoSkillsExchange,
+        url: 'https://learn.microsoft.com/en-us/exchange/exchange-online',
     },
 
+    // ITSM / MSP tooling
     {
-        label: 'Tailwindcss',
-        logo: LogoTailwindcss,
-        url: 'https://tailwindcss.com/',
+        label: 'Ticketing',
+        logo: LogoSkillsTicketing,
+        url: 'https://www.atlassian.com/software/jira/service-management/ticketing-software',
+    },
+    {
+        label: 'RMM',
+        logo: LogoSkillsRmm,
+        url: 'https://en.wikipedia.org/wiki/Remote_monitoring_and_management',
+    },
+    {
+        label: 'Documentation',
+        logo: LogoSkillsDocumentation,
+        url: 'https://www.atlassian.com/software/confluence',
+    },
+    {
+        label: 'n8n',
+        logo: LogoSkillsN8n,
+        url: 'https://docs.n8n.io/',
     },
 
-
-    {
-        label: 'Git',
-        logo: LogoGit,
-        url: 'https://github.com/GreenH47',
-    },
-
-    {
-        label: 'AWS',
-        logo: LogoSkillsAws,
-        url: 'https://aws.amazon.com/',
-    },
-
-    {
-        label: 'C#',
-        logo: LogoSkillsCsharp,
-        url: 'https://docs.microsoft.com/en-us/dotnet/csharp/',
-    },
-
-    {
-        label: 'Python',
-        logo: LogoSkillsPython,
-        url: 'https://www.python.org/',
-    },
-
-    {
-        label: 'Kubernetes',
-        logo: LogoSkillsKubernetes,
-        url: 'https://kubernetes.io/',
-    },
-
-    {
-        label: 'Docker',
-        logo: LogoSkillsDocker,
-        url: 'https://www.docker.com/',
-    },
-
-    {
-        label: 'Wordpress',
-        logo: LogoSkillsWordpress,
-        url: 'https://wordpress.org/',
-    },
-
-    {
-        label: 'Shopify',
-        logo: LogoSkillsShopify,
-        url: 'https://www.shopify.com/',
-    },
-
-    {
-        label: 'Linux',
-        logo: LogoSkillsLinux,
-        url: 'https://www.linux.org/',
-    },
-
-    {
-        label: 'proxmox',
-        logo: LogoSkillsProxmox,
-        url: 'https://www.proxmox.com/en/',
-    },
-
+    // Infrastructure / Cloud
     {
         label: 'Networking',
         logo: LogoSkillsNetworking,
         url: 'https://learn.microsoft.com/en-us/training/modules/network-fundamentals/',
     },
+    {
+        label: 'Linux',
+        logo: LogoSkillsLinux,
+        url: 'https://www.linuxfoundation.org/',
+    },
+    {
+        label: 'Proxmox',
+        logo: LogoSkillsProxmox,
+        url: 'https://www.proxmox.com/en/',
+    },
+    {
+        label: 'Docker',
+        logo: LogoSkillsDocker,
+        url: 'https://docs.docker.com/',
+    },
+    {
+        label: 'Kubernetes',
+        logo: LogoSkillsKubernetes,
+        url: 'https://kubernetes.io/docs/home/',
+    },
+    {
+        label: 'PostgreSQL',
+        logo: LogoPostgreSQL,
+        url: 'https://www.postgresql.org/docs/',
+    },
+    {
+        label: 'AWS',
+        logo: LogoSkillsAws,
+        url: 'https://docs.aws.amazon.com/',
+    },
 
-
-
+    // Scripting
     {
         label: 'Bash',
         logo: LogoSkillsBash,
         url: 'https://www.gnu.org/software/bash/',
     },
-
-
     {
-        label: 'Prometheus',
-        logo: LogoSkillsPrometheus,
-        url: 'https://prometheus.io/',
+        label: 'Python',
+        logo: LogoSkillsPython,
+        url: 'https://docs.python.org/',
     },
 
+    // Web / Platforms
+    {
+        label: 'Next.js',
+        logo: LogoNextjs,
+        url: 'https://nextjs.org/docs',
+    },
+    {
+        label: 'WordPress',
+        logo: LogoSkillsWordpress,
+        url: 'https://developer.wordpress.org/',
+    },
+    {
+        label: 'Shopify',
+        logo: LogoSkillsShopify,
+        url: 'https://shopify.dev/docs',
+    },
+
+    // Hardware
     {
         label: 'PC Repair',
         logo: LogoSkillsPCrepair,
-        url: 'https://www.seek.com.au/career-advice/role/computer-technician',
+        url: 'https://www.comptia.org/en/certifications/a/',
     },
-
-    {
-        label: 'SEO',
-        logo: LogoSkillsSEO,
-        url: 'https://developers.google.com/search/docs/fundamentals/seo-starter-guide',
-    },
-
-
-
 ];
+
 
 export const EXPERIENCES: ExperienceDetails[] = [
     {
@@ -301,35 +316,7 @@ export const EXPERIENCES: ExperienceDetails[] = [
         ],
     },
 
-    {
-        logo: LogoWorkJinhuan,
 
-        logoAlt: 'Jinhuan logo',
-        position: 'Jinhuan Construction Group - Executive Assistant to the Manager',
-        companyUrl: 'https://jinhuanconstruction.com/',
-        startDate: new Date(2021, 3),
-        endDate: new Date(2021, 10),
-        summary: [
-            'Created presentations, reports, and meeting minutes for the department.',
-            'Distributed communications regarding important announcements and events.',
-            'Collaborated with the admin team to ensure smooth departmental operations',
-        ],
-    },
-
-    {
-        logo: LogoWorkNaton,
-
-        logoAlt: 'Naton logo',
-        position: 'Beijing Naton Technology Group - Test Engineer of Biomechanics',
-        companyUrl: 'https://www.natonmedical.com/?en-US',
-        startDate: new Date(2020, 8),
-        endDate: new Date(2021, 1),
-        summary: [
-            'Reviewed specifications with the design team and conducted thorough testing',
-            'Planned and executed testing phases and compiled final reports.',
-            'Optimized design plans through component and design testing.',
-        ],
-    },
 
 ];
 

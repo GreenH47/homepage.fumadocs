@@ -10,18 +10,20 @@ import {Metadata} from 'next';
 // import Footer from '@/components/layout/footer';
 import '@/global.css';
 
-const title = 'Green Huang | IT support engineer From Melbourne Australia.';
+const title = "Green Huang | IT support & network engineer From Melbourne Australia.";
 const description =
-    'I\'m a curious and dedicated IT support engineer with a background in full-stack development.';
+    'I\'m a curious and dedicated IT support & network engineer with a background in full-stack development.';
 const url = 'https://greenhuang.com/';
+
+const ogImage = 'https://s3.greenhuang.com/green-opengraph.png';
 
 export const metadata: Metadata = {
     metadataBase: new URL(url),
     title,
     description,
     keywords: [
-        'Full Stack Developer',
-        'C# Developer',
+        'IT support engineer',
+        'Network Engineer  ',
         'Next.js Developer',
         'AWS Engineer',
     ],
@@ -34,17 +36,14 @@ export const metadata: Metadata = {
         siteName: title,
         images: [
             {
-                url: '/images/open-graph-sagar.png',
+                url: ogImage, // <- changed
+                width: 1200,
+                height: 630,
+                alt: title,
             },
         ],
     },
-    twitter: {
-        card: 'summary_large_image',
-        title,
-        description,
-        creator: '@shahsagarm',
-        images: '/images/open-graph-sagar.png',
-    },
+
     icons: {
         icon: '/icon.png',
         shortcut: 'https://s3.greenhuang.com/favicon.ico',
