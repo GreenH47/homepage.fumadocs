@@ -863,7 +863,7 @@ copy the workflow and change to your details
 
 [Exporting and importing workflows \| n8n Docs](https://docs.n8n.io/courses/level-one/chapter-6/)  
 
-![Bitwarden Lite 1769339421319](https://s3.greenhuang.com/docs/Bitwarden-Lite-1769339421319.png)
+![Bitwarden Lite 1769339421319|649x231](https://s3.greenhuang.com/docs/Bitwarden-Lite-1769339421319.png)
 
 ![Bitwarden Lite 1769339731970|548x302](https://s3.greenhuang.com/docs/Bitwarden-Lite-1769339731970.png)
 
