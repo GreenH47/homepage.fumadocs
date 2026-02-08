@@ -133,3 +133,6 @@ Uploaded backup catalog (32.438 KiB)
 Duration: 427.01s    
 End Time: Sat Jan 10 20:03:43 2026   
 ```
+
+# restore vm from backup
+![proxmox backup server setup 1770527960433](https://s3.greenhuang.com/docs/proxmox%20backup%20server%20setup-1770527960433.png)

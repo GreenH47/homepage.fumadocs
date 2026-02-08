@@ -11,7 +11,7 @@ At the login prompt, enter `installer` as the username and `opnsense` as the
 
 ![OPNsense 1769508239371](https://s3.greenhuang.com/docs/OPNsense-1769508239371.png)
 
-# access from Wan port
+# Access from Wan port
 By default OPNsense blocks inbound traffic on WAN (including ping and Web GUI), so you usually cannot ping or open https://192.168.0.203
  from your main LAN unless you explicitly allow it.  
  [\[SOLVED\] Unable to access WebGUI via WAN interface](https://forum.opnsense.org/index.php?topic=8833.0&utm_source=chatgpt.com)  
@@ -81,6 +81,61 @@ Add another WAN rule:
     
 - **Destination:** **WAN address**
 
-![OPNsense 1769515168055](https://s3.greenhuang.com/docs/OPNsense-1769515168055.png)
+![OPNsense 1769515168055|0x0](https://s3.greenhuang.com/docs/OPNsense-1769515168055.png)
 
 
+# Setup DHCP/DNS/Internet access
+## Confirm OPNsense itself has internet on WAN
+
+In OPNsense GUI:
+
+**Interfaces → Diagnostics → Ping**
+
+- Address family: **IPv4**
+    
+- Host: `1.1.1.1`
+    
+- **Source address: WAN**
+
+## Ensure LAN (or VLAN) firewall rules allow outbound
+
+Go to:
+
+**Firewall → Rules → LAN** (or your VLAN interface tab)
+
+You need a rule like:
+
+- Action: **Pass**
+    
+- IPv4 (and optionally IPv6)
+    
+- Source: **LAN net** (192.168.1.0/24)
+    
+- Destination: **any**
+    
+
+Without an allow rule on that interface, traffic is blocked.
+
+If your VM is actually on a **VLAN interface** (not plain LAN), you must add the allow rule under **that VLAN tab**, not LAN.
+
+
+## Fix/verify Outbound NAT (most likely)
+
+In OPNsense:
+
+- **Firewall → NAT → Outbound**
+    
+- Set mode to **Automatic outbound NAT rule generation** (or **Hybrid** if you need custom rules)
+    
+- **Save → Apply**
+    
+
+Then check the generated rules list includes your LAN/VLAN subnet (e.g. `192.168.1.0/24`) translating to **WAN address**.
+
+If you must do it manually (only if you’re in Manual mode):
+
+- Interface: **WAN**
+    
+- Source: **192.168.1.0/24** (or your VLAN subnet)
+    
+- Translation / target: **Interface address (WAN)**
