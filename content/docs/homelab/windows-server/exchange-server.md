@@ -56,3 +56,4 @@ after that add a A record `mail.greenhuang.local` to exchange ip address
 
 now user can visit `mail.greenhuang.local/owa/` to login their account  
 ![exchange server 20250527 10](https://s3.greenhuang.com/docs/exchange-server-20250527-10.png)
+
