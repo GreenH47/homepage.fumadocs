@@ -109,7 +109,7 @@ sudo systemctl enable --now nginx   # start at boot
 ```
 
 
-# enable ssh
+# setup ssh
 
 generate ssh key on windows`ssh-keygen` files under `C:\Users\huang\.ssh`  
 
@@ -122,5 +122,7 @@ chmod 700 ~/.ssh
 chmod 600 ~/.ssh/authorized_keys
 
 ```
+
+
 
 
