@@ -97,8 +97,10 @@ http://127.0.0.1:51821
 
 
 - Or place Nginx in front as a reverse proxy with HTTPS and authentication.
-    ```bash
-    server {
+
+
+```
+server {
     listen 80;
     listen [::]:80;
     server_name wireguard.greenhuang.com;
@@ -132,7 +134,7 @@ server {
     }
 }
 
-    ```
+```
 
 ![WGDashboard 1772277457058](https://s3.greenhuang.com/docs/WGDashboard-1772277457058.png)
 ## Default Login
@@ -181,7 +183,7 @@ After creating a peer in WGDashboard:
     
 
 ```bash
-ping 168.138.9.158
+ping <vpn-server-ip>
 ```
 
 If routing is configured correctly, the handshake should appear in the dashboard.
