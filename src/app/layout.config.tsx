@@ -30,16 +30,16 @@ export const baseOptions: BaseLayoutProps = {
             label: 'Email', // `aria-label`
             icon: <Mail />,
             text: 'Mail',
-            url: 'mailto:greenhuang47@gmail.com',
+            url: 'mailto:inbox@greenhuang.com',
         },
 
-        {
-            type: 'icon',
-            label: 'PhoneCall', // `aria-label`
-            icon: <PhoneCall />,
-            text: 'PhoneCall',
-            url: 'tel:+610478395855',
-        },
+        // {
+        //     type: 'icon',
+        //     label: 'PhoneCall', // `aria-label`
+        //     icon: <PhoneCall />,
+        //     text: 'PhoneCall',
+        //     url: 'tel:+610478395855',
+        // },
 
         {
             type: 'icon',

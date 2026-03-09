@@ -35,6 +35,7 @@ sudo apt install docker.io docker-compose-plugin -y
 sudo systemctl enable docker
 ```
 
+[Proxmox VE Helper-Scripts](https://community-scripts.github.io/ProxmoxVE/scripts?id=wireguard)  
 
 ## Create Project Directory
 

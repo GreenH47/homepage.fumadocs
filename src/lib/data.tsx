@@ -102,7 +102,7 @@ export const SOCIAL_LINKS = [
     },
     {
         icon: Mail,
-        url: 'mailto:admin@greenhuang.com',
+        url: 'mailto:inbox@greenhuang.com',
     },
     // {
     //     icon: PhoneCall,
