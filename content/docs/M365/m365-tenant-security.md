@@ -242,7 +242,13 @@ Set-ExternalInOutlook `
 -Enabled $true `  
 -AllowList "aaa@gmail.com","bbb@gmail.com"
 
+Set-ExternalInOutlook -AllowList @{Add="partnerdomain.com","trustedcompany.com"}
+
+# Remove a domain later
+Set-ExternalInOutlook -AllowList @{Remove="partnerdomain.com"}
+
 ```
+dont use external banner if you want to add HTML banner!!!   
 
 # HTML banner for external email  
 [Implement External Email Warning Banners in 365 and Gmail](https://www.mspdemos.com/implement-external-email-warning-banners)  

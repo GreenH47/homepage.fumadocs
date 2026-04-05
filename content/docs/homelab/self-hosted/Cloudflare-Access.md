@@ -7,8 +7,8 @@ Cloudflare Access adds an authentication layer before traffic ever hits your tun
 [Create an Access application · Cloudflare Learning Paths](https://developers.cloudflare.com/learning-paths/clientless-access/access-application/create-access-app/?utm_source=chatgpt.com)  
 
 [Publish a self-hosted application to the Internet · Cloudflare One docs](https://developers.cloudflare.com/cloudflare-one/access-controls/applications/http-apps/self-hosted-public-app/)  
-
-# Steps (high-level)
+# using email OTP to access
+## Steps (high-level)
 - Configure an identity provider (Google, GitHub, email OTP, etc.) or a policy under **Zero Trust → Access control → Polices
     ![Cloudflare Access 1771131700577|617x375](https://s3.greenhuang.com/docs/Cloudflare-Access-1771131700577.png)
     
@@ -24,9 +24,11 @@ Cloudflare Access adds an authentication layer before traffic ever hits your tun
 ![Cloudflare Access 1771131931673](https://s3.greenhuang.com/docs/Cloudflare-Access-1771131931673.png)
 
 
-# results
+## results
 If an email is not on the allowed list, no code is sent — it will silently fail, preventing guessing.  
 
 ![Cloudflare Access 1771132013405](https://s3.greenhuang.com/docs/Cloudflare-Access-1771132013405.png)
 
 ![Cloudflare Access 1771132075296](https://s3.greenhuang.com/docs/Cloudflare-Access-1771132075296.png)
+
+
