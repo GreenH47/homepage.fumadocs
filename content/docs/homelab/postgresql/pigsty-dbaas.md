@@ -7,7 +7,8 @@ Pigsty is a PostgreSQL infrastructure stack that provides HA, monitoring, backup
 
 # deploy and config vm 
 ## proxmox vm config
-using this template with cloudinit to create ubuntu 24.04 vm.
+using this template with cloudinit to create ubuntu 24.04 vm.  
+[Everything I've seen on optimizing Postgres on ZFS](https://vadosware.io/post/everything-ive-seen-on-optimizing-postgres-on-zfs-on-linux/) 
 ```yaml
 agent: 1
 balloon: 0
@@ -44,7 +45,7 @@ which will create seperate disk for DB
  ├── /var/lib/postgresql/data (disk0)
  └── /var/lib/postgresql/wal (disk1)
 ```
-
+[PostgreSQL WAL: Boost Performance with a Dedicated Disk](https://stormatics.tech/blogs/understanding-postgresql-wal-and-optimizing-it-with-a-dedicated-disk?utm_source=chatgpt.com)  
 ## login vm and mount the disk
 ```shell
 greenhuang@pgsql-server:~$ lsblk
