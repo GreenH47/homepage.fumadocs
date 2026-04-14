@@ -33,12 +33,11 @@ const HeroSection = () => (
               <span className="inline-block animate-waving-hand">👋</span>
             </Typography>
             <Typography>
-              IT Support Engineer delivering deskside and remote support across
-              multi-site SMB environments. Hands-on with Windows 10/11 builds,
-              hardware break/fix, Microsoft 365/Entra ID, and on-prem AD sync.
-              Comfortable juggling L1–L2 tickets, site visits, and small implementations
-              (PC rollouts, network patching, basic PBX). Known for clear customer comms,
-              accurate documentation, and steady, methodical troubleshooting.
+              IT Support Engineer with hands-on L1–L2 experience supporting multi-site environments
+              across Windows endpoints, Microsoft 365, Entra ID, and on-prem Active Directory.
+              Strong generalist across common MSP technologies including networking, endpoint management,
+              hardware support, and remote tools. Experienced delivering both onsite
+              and remote support with a focus on customer service, clear communication, and SLA-driven ticket resolution.
 
 
             </Typography>

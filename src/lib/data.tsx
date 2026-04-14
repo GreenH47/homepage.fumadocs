@@ -255,17 +255,37 @@ export const EXPERIENCES: ExperienceDetails[] = [
         startDate: new Date(2025, 7, 14), // 0-indexed month: 7 = August
         currentlyWorkHere: true,
         summary: [
-            'Provide deskside and remote L1/L2 support across multiple client sites, resolving Windows, Microsoft 365, and networking incidents within SLA targets.',
-            'Onboard and offboard staff end-to-end: configure AD/Entra ID accounts, assign/revoke Microsoft 365 licenses, and manage Exchange Online mailboxes, shared access, and permissions.',
-            'Deploy and troubleshoot Windows 11 endpoints: imaging, driver/firmware updates, BitLocker enablement, and resolving BSODs or hardware faults (RAM/SSD replacements).',
-            'Investigate and resolve connectivity issues: trace patch panel to switch mappings, restore LAN/print access, verify VLAN/port status, and assist with Wi-Fi/VPN triage.',
-            'Monitor RMM alerts and event logs; apply OS/app/firmware patches, remediate update failures, and escalate complex issues under change control.',
-            'Maintain clear documentation in ServiceNow/Jira tickets and Hudu KB, including port mapping diagrams, how-to notes, and offboarding checklists.',
-            'Coordinate with vendors for warranty claims and replacements; assist with small deployments and after-hours cutovers to minimize downtime.',
-            'Contribute to root cause analysis (e.g., diagnosing faulty RAM causing WHEA logger errors) and share solutions to prevent recurring incidents.'
+            "Provide deskside and remote L1/L2 support across multiple client sites, resolving Windows, Microsoft 365, and networking incidents within SLA targets.",
+            "Manage user lifecycle in Active Directory and Entra ID: onboarding/offboarding, permissions, group policy updates, and access control.",
+            "Support Microsoft 365 services including Outlook, Teams, OneDrive, and SharePoint, troubleshooting mail flow, login, and sync issues.",
+            "Deploy and troubleshoot Windows 10/11 endpoints: imaging, driver/firmware updates, hardware diagnostics, and peripheral support.",
+            "Install and configure UniFi networking devices; manage patching, structured cabling, and network cabinet organisation.",
+            "Investigate and resolve connectivity issues across LAN/Wi-Fi, DNS/DHCP, VPN, routers, and NBN services.",
+            "Configure and troubleshoot VoIP desk phones and basic telephony systems.",
+            "Assist with server and infrastructure tasks: Windows Server, AD environments, and Dell hardware setup.",
+            "Manage tickets using ServiceNow/Jira: prioritisation, documentation, SLA tracking, and escalation.",
+            "Communicate with end users and stakeholders to provide clear updates and ensure high-quality customer service."
         ],
     },
 
+
+    {
+        logo: LogoWorkRans,
+        logoAlt: 'Rans logo',
+        position: 'RANS Australia - Website Development and Maintenance Intern',
+        companyUrl: 'https://rans.com.au',
+        startDate: new Date(2025, 1),
+        endDate: new Date(2025, 4),
+        summary: [
+            "Assist in Microsoft 365 migration projects including mailbox cutover, Outlook configuration, and post-migration issue resolution.",
+            "Support user onboarding and data migration to OneDrive and SharePoint, ensuring minimal downtime and data integrity.",
+            "Reimage and deploy Windows 11 endpoints with driver installation, updates, and post-deployment validation.",
+            "Perform basic administration in Entra ID including user account setup, access management, and device registration.",
+            "Troubleshoot common end-user issues across Windows OS, Microsoft 365 applications, and network connectivity.",
+            "Provide onsite and remote support to office and warehouse users, ensuring timely issue resolution.",
+            "Document support activities and solutions in internal systems to improve knowledge sharing and consistency."
+        ],
+    },
 
     {
         logo: LogoWorkKingdomTechnology,
@@ -279,23 +299,6 @@ export const EXPERIENCES: ExperienceDetails[] = [
             'Implementing complex forms with React Hook Form and Zod for robust validation.\n',
             'Working with webhooks and API integrations to enhance application functionality.\n',
             'Utilising Supabase for backend services and real-time data handling\n',
-        ],
-    },
-
-
-    {
-        logo: LogoWorkRans,
-        logoAlt: 'Rans logo',
-        position: 'RANS Australia - Website Development and Maintenance Intern',
-        companyUrl: 'https://rans.com.au',
-        startDate: new Date(2025, 1),
-        endDate: new Date(2025, 4),
-        summary: [
-            'Optimised website (rans.com.au) with Canva & WooCommerce, boosting mobile Lighthouse scores by 18 %.',
-            'Diagnosed and repaired office PC hardware (HDD swaps, RAM upgrades) and resolved Wi-Fi dropouts by re-configuring Telstra/Optus routers and replacing faulty AP modules, restoring 100 % uptime for staff devices.',
-            'Offload media from the server to CDN, which cuts page-load times by 35 %.',
-            'Conducted SEO research (SEMrush), rewrote meta-tags, and lifted organic search traffic by 22 %.',
-            'Authored step-by-step knowledge-base articles for non-technical staff, reducing repetitive tickets by 40 %. ',
         ],
     },
 
